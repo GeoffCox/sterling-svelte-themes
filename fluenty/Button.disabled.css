@@ -1,0 +1,9 @@
+.sterling-button:disabled,
+.sterling-button:disabled:hover,
+.sterling-button:disabled:active {
+  background-color: var(--colorNeutralBackgroundDisabled);
+  border-color: var(--colorNeutralStrokeDisabled);
+  color: var(--colorNeutralForegroundDisabled);
+  cursor: not-allowed;
+  position: relative;
+}

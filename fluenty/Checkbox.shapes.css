@@ -1,0 +1,3 @@
+.sterling-checkbox.circular .indicator {
+  border-radius: var(--borderRadiusCircular);
+}

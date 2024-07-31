@@ -1,0 +1,57 @@
+.sterling-button {
+  align-content: center;
+  align-items: center;
+  background-color: var(--colorNeutralBackground1);
+  border-color: var(--colorNeutralStroke1);
+  border-radius: var(--borderRadiusMedium);
+  border-style: solid;
+  border-width: var(--strokeWidthThin);
+  box-sizing: border-box;
+  color: var(--colorNeutralForeground1);
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  font: inherit;
+  font-family: var(--fontFamilyBase);
+  font-size: var(--fontSizeBase300);
+  font-weight: var(--fontWeightSemibold);
+  line-height: var(--lineHeightBase300);
+  justify-content: center;
+  justify-items: center;
+  column-gap: 0.25em;
+  overflow: hidden;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition-property: background-color, color, border-color;
+  transition-duration: var(--durationFaster);
+  transition-timing-function: var(--curveEasyEase);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.sterling-button:hover {
+  background-color: var(--colorNeutralBackground1Hover);
+  border-color: var(--colorNeutralStroke1Hover);
+  color: var(--colorNeutralForeground1Hover);
+}
+
+.sterling-button:active {
+  background-color: var(--colorNeutralBackground1Pressed);
+  border-color: var(--colorNeutralStroke1Pressed);
+  color: var(--colorNeutralForeground1Pressed);
+}
+
+.sterling-button:focus-visible {
+  border-color: var(--colorStrokeFocus2);
+  outline-color: var(--colorStrokeFocus2);
+  outline-offset: 0;
+  outline-style: solid;
+  outline-width: var(--strokeWidthMedium);
+}
+
+@media (prefers-reduced-motion) {
+  .sterling-button {
+    transition: none;
+  }
+}

@@ -1,0 +1,8 @@
+.sterling-dropdown.disabled {
+  cursor: not-allowed;
+  outline: none;
+}
+
+.sterling-dropdown.disabled .button {
+  cursor: not-allowed;
+}

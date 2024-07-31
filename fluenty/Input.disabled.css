@@ -1,0 +1,26 @@
+.sterling-input.disabled {
+  cursor: not-allowed;
+  outline: none;
+  background-color: var(--colorTransparentBackground);
+  border-color: var(--colorNeutralStrokeDisabled);
+  transition: none;
+}
+
+.sterling-input.disabled::after {
+  content: unset;
+  transition: none;
+}
+
+.sterling-input.disabled input {
+  color: var(--colorNeutralForegroundDisabled);
+  background-color: var(--colorTransparentBackground);
+  cursor: not-allowed;
+}
+
+.sterling-input.disabled input::placeholder {
+  color: var(--colorNeutralForegroundDisabled);
+}
+
+.sterling-input-label.disabled {
+  color: var(--colorNeutralForegroundDisabled);
+}

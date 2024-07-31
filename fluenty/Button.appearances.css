@@ -1,0 +1,70 @@
+.sterling-button.outline {
+  background-color: var(--colorTransparentBackground);
+}
+
+.sterling-button.outline:hover {
+  background-color: var(--colorTransparentBackgroundHover);
+}
+
+.sterling-button.outline:hover:active {
+  background-color: var(--colorTransparentBackgroundPressed);
+}
+
+.sterling-button.primary {
+  background-color: var(--colorBrandBackground);
+  border-color: transparent;
+  color: var(--colorNeutralForegroundOnBrand);
+}
+
+.sterling-button.primary:hover {
+  background-color: var(--colorBrandBackgroundHover);
+  border-color: transparent;
+  color: var(--colorNeutralForegroundOnBrand);
+}
+
+.sterling-button.primary:hover:active {
+  background-color: var(--colorBrandBackgroundPressed);
+  border-color: transparent;
+  color: var(--colorNeutralForegroundOnBrand);
+}
+
+.sterling-button:focus-visible,
+.sterling-button:focus-visible:hover {
+  border-color: var(--colorNeutralForegroundOnBrand);
+}
+
+.sterling-button.subtle {
+  background-color: var(--colorSubtleBackground);
+  border-color: transparent;
+  color: var(--colorNeutralForeground2);
+}
+
+.sterling-button.subtle:hover {
+  background-color: var(--colorSubtleBackgroundHover);
+  border-color: transparent;
+  color: var(--colorNeutralForeground2Hover);
+}
+
+.sterling-button.subtle:hover:active {
+  background-color: var(--colorSubtleBackgroundPressed);
+  border-color: transparent;
+  color: var(--colorNeutralForeground2Pressed);
+}
+
+.sterling-button.transparent {
+  background-color: var(--colorTransparentBackground);
+  border-color: transparent;
+  color: var(--colorNeutralForeground2);
+}
+
+.sterling-button.transparent:hover {
+  background-color: var(--colorTransparentBackgroundHover);
+  border-color: transparent;
+  color: var(--colorNeutralForeground2BrandHover);
+}
+
+.sterling-button.transparent:hover:active {
+  background-color: var(--colorTransparentBackgroundPressed);
+  border-color: transparent;
+  color: var(--colorNeutralForeground2BrandPressed);
+}

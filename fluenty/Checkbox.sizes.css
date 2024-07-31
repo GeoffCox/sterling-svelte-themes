@@ -1,0 +1,19 @@
+.sterling-checkbox.large {
+  font-size: var(--fontSizeBase400);
+}
+
+.sterling-checkbox.large input {
+  height: 20px;
+  width: 20px;
+}
+
+.sterling-checkbox.large .indicator {
+  height: 20px;
+  width: 20px;
+}
+
+.sterling-checkbox.large .indicator::after {
+  border-width: 0 1.5px 1.5px 0;
+  height: 14px;
+  width: 7px;
+}

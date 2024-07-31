@@ -1,0 +1,19 @@
+.sterling-checkbox.disabled {
+  color: var(--colorNeutralForegroundDisabled);
+}
+
+.sterling-checkbox.disabled input {
+  cursor: not-allowed;
+}
+
+.sterling-checkbox.disabled .indicator {
+  border-color: var(--colorNeutralStrokeDisabled);
+}
+
+.sterling-checkbox.disabled .indicator::after {
+  border-color: var(--colorNeutralForegroundDisabled);
+}
+
+.sterling-checkbox.disabled > label {
+  cursor: not-allowed;
+}

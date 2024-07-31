@@ -1,0 +1,132 @@
+.sterling-checkbox {
+  align-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  font: inherit;
+  font-family: var(--fontFamilyBase);
+  font-size: var(--fontSizeBase300);
+  line-height: var(--lineHeightBase300);
+  margin: 0;
+  outline: none;
+  padding: 0.5em;
+}
+
+/* 
+The container 
+- allows the input to be hidden
+- avoids input participating in layout
+- prevents collisions with surrounding slots
+*/
+.sterling-checkbox .container {
+  font: inherit;
+  position: relative;
+  display: grid;
+  align-items: center;
+  margin-right: 0.25em;
+}
+
+/*
+The input is hidden since the built-in browser checkbox cannot be customized
+*/
+.sterling-checkbox input {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  opacity: 0;
+  height: 14px;
+  width: 14px;
+  cursor: pointer;
+}
+
+/*
+The indicator handles both the box and the checkmark.
+The box cannot be on the container since the adjacent sibling selector is needed
+and there is not a parent CSS selector.
+*/
+.sterling-checkbox .indicator {
+  background-color: var(--colorTransparentBackground);
+  border-color: var(--colorNeutralStrokeAccessibleHover);
+  border-style: solid;
+  border-radius: var(--borderRadiusSmall);
+  border-width: var(--strokeWidthThin);
+  box-sizing: border-box;
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  transition-property: background-color, color, border-color;
+  transition-duration: var(--durationFaster);
+  transition-timing-function: var(--curveEasyEase);
+  width: 16px;
+  pointer-events: none;
+}
+
+.sterling-checkbox:not(.disabled) input:checked + .indicator {
+  background-color: var(--colorCompoundBrandBackground);
+  border-color: var(--colorCompoundBrandBackground);
+}
+
+.sterling-checkbox:not(.disabled):hover input:checked + .indicator {
+  background-color: var(--colorCompoundBrandBackgroundHover);
+  border-color: var(--colorCompoundBrandBackgroundHover);
+}
+
+.sterling-checkbox:not(.disabled):active input:checked + .indicator {
+  background-color: var(--colorCompoundBrandBackgroundPressed);
+  border-color: var(--colorCompoundBrandBackgroundPressed);
+}
+
+.sterling-checkbox.using-keyboard:focus-within {
+  outline-color: var(--colorStrokeFocus2);
+  outline-offset: 0;
+  outline-style: solid;
+  outline-width: var(--borderRadiusThin);
+}
+
+/*
+The checkmark is a rotated L centered in the box.
+*/
+.sterling-checkbox .indicator::after {
+  border-color: var(--colorNeutralForegroundInverted);
+  border-style: solid;
+  border-width: 0 1.5px 1.5px 0;
+  box-sizing: border-box;
+  content: '';
+  height: 10px;
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transform-origin: center;
+  transition:
+    border-color 250ms,
+    opacity 150ms;
+  width: 5px;
+  opacity: 0;
+}
+
+.sterling-checkbox:not(.disabled):hover .indicator::after,
+.sterling-checkbox:not(.disabled):active .indicator::after {
+  border-color: var(--colorNeutralForegroundInverted);
+}
+
+.sterling-checkbox input:checked + .indicator::after {
+  opacity: 1;
+}
+
+.sterling-checkbox > label {
+  color: currentColor;
+  transition: color 250ms;
+  font: inherit;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion) {
+  .sterling-checkbox .indicator,
+  .sterling-checkbox .indicator::after,
+  .sterling-checkbox .container::after,
+  .sterling-checkbox > label {
+    transition: none;
+  }
+}

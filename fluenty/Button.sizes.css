@@ -1,0 +1,11 @@
+.sterling-button.small {
+  font-size: var(--fontSizeBase200);
+  font-weight: var(--fontWeightRegular);
+  line-height: var(--lineHeightBase200);
+}
+
+.sterling-button.large {
+  font-size: var(--fontSizeBase400);
+  font-weight: var(--fontWeightSemibold);
+  line-height: var(--lineHeightBase400);
+}

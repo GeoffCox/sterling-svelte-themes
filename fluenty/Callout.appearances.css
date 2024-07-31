@@ -1,0 +1,9 @@
+.sterling-callout.inverted {
+  background-color: var(--colorNeutralBackgroundStatic);
+  color: var(--colorNeutralForegroundStaticInverted);
+}
+
+.sterling-callout.brand {
+  background-color: var(--colorBrandBackground);
+  color: var(--colorNeutralForegroundOnBrand);
+}

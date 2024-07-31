@@ -1,0 +1,68 @@
+/* ----- underline ----- */
+
+.sterling-input.underline {
+  background-color: var(--colorTransparentStroke);
+  border-radius: 0;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+}
+
+.sterling-input.underline::after {
+  left: 0;
+  right: 0;
+  border-radius: 0;
+}
+
+.sterling-input.underline:not(.disabled):has(input:active)::after {
+  border-color: var(--colorTransparentStroke);
+  border-bottom-color: var(--colorCompoundBrandStrokePressed);
+}
+
+.sterling-input.underline:not(.disabled):hover {
+  border-color: var(--colorTransparentStroke);
+  border-bottom-color: var(--colorNeutralStrokeAccessibleHover);
+}
+
+/* ----- filled ----- */
+
+.sterling-input.filled-lighter,
+.sterling-input.filled-lighter-shadow,
+.sterling-input.filled-darker,
+.sterling-input.filled-darker-shadow {
+  border-color: var(--colorTransparentStroke);
+}
+
+.sterling-input.filled-lighter:not(.disabled):has(input:active)::after,
+.sterling-input.filled-lighter-shadow:not(.disabled):has(input:active)::after,
+.sterling-input.filled-darker:not(.disabled):has(input:active)::after,
+.sterling-input.filled-darker-shadow:not(.disabled):has(input:active)::after {
+  border-color: var(--colorTransparentStroke);
+  border-bottom-color: var(--colorCompoundBrandStrokePressed);
+}
+
+.sterling-input.filled-lighter:not(.disabled):hover,
+.sterling-input.filled-lighter-shadow:not(.disabled):hover,
+.sterling-input.filled-darker:not(.disabled):hover,
+.sterling-input.filled-darker-shadow:not(.disabled):hover {
+  border-color: var(--colorTransparentStroke);
+  border-bottom-color: var(--colorNeutralStrokeAccessibleHover);
+}
+
+.sterling-input.filled-lighter {
+  background-color: var(--colorNeutralBackground1);
+}
+
+.sterling-input.filled-lighter-shadow {
+  background-color: var(--colorNeutralBackground1);
+  box-shadow: var(--shadow2);
+}
+
+.sterling-input.filled-darker {
+  background-color: var(--colorNeutralBackground3);
+}
+
+.sterling-input.filled-darker-shadow {
+  background-color: var(--colorNeutralBackground3);
+  box-shadow: var(--shadow2);
+}
