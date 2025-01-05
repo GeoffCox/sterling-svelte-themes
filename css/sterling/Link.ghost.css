@@ -1,0 +1,11 @@
+.sterling-link.ghost {
+  border-bottom-color: transparent;
+}
+
+.sterling-link.ghost:hover {
+  border-bottom-color: var(--stsv-input__border-color--hover);
+}
+
+.sterling-link.ghost:active {
+  border-bottom-color: var(--stsv-input__border-color--selected);
+}
