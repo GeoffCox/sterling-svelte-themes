@@ -1,7 +1,24 @@
 {
-  "name": "sterling-svelte-themes",
-  "private": true,
-  "version": "0.0.1",
+  "name": "@geoffcox/sterling-svelte-themes",
+  "version": "1.0.0",
+  "author": "Geoff Cox",
+  "description": "A modern theme for the sterling-svelte component library.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeoffCox/sterling-svelte-themes/issues"
+  },
+  "homepage": "https://github.com/GeoffCox/sterling-svelte-themes/blob/main/README.md",
+  "keywords": [
+    "svelte",
+    "svelte 5",
+    "sveltekit",
+    "design system",
+    "sterling",
+    "sterling-svelte",
+    "theme",
+    "styles",
+    "css"
+  ],
   "type": "module",
   "files": [
     "css"
