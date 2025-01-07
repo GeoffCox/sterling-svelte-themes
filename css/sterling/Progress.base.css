@@ -59,28 +59,28 @@
 
 /* ----- status ----- */
 
-.sterling-progress.info-status .indicator {
-  background-color: var(--stsv-status--info__border-color);
+.sterling-progress.info .indicator {
+  background-color: var(--stsv-common__border-color--info);
 }
 
-.sterling-progress.success-status .indicator {
-  background-color: var(--stsv-status--success__border-color);
+.sterling-progress.success .indicator {
+  background-color: var(--stsv-common__border-color--success);
 }
 
-.sterling-progress.warning-status .indicator {
-  background-color: var(--stsv-status--warning__border-color);
+.sterling-progress.warning .indicator {
+  background-color: var(--stsv-common__border-color--warning);
 }
 
-.sterling-progress.error-status .indicator {
-  background-color: var(--stsv-status--danger__border-color);
+.sterling-progress.error .indicator {
+  background-color: var(--stsv-common__border-color--error);
 }
 
-.sterling-progress.auto-status[data-progress-percent] .indicator {
-  background-color: var(--stsv-status--info__border-color);
+.sterling-progress.auto-success[data-progress-percent] .indicator {
+  background-color: var(--stsv-common__border-color--info);
 }
 
-.sterling-progress.auto-status[data-progress-percent='100'] .indicator {
-  background-color: var(--stsv-status--success__border-color);
+.sterling-progress.auto-success[data-progress-percent='100'] .indicator {
+  background-color: var(--stsv-common__border-color--success);
 }
 
 /* ----- prefers-reduced-motion ----- */

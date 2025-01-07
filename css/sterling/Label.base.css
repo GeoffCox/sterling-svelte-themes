@@ -43,10 +43,6 @@
   margin: 0;
 }
 
-.sterling-label .sterling-label.colorful .text {
-  color: var(--stsv-common--colorful__color--secondary);
-}
-
 .sterling-label .content {
   display: grid;
   grid-area: content;
@@ -67,28 +63,27 @@
 }
 
 .sterling-label.info .message {
-  background-color: var(--stsv-status--info__background-color);
-  border-color: var(--stsv-status--info__border-color);
-  color: var(--stsv-status--info__color);
+  background-color: var(--stsv-common__background-color--info);
+  border-color: var(--stsv-common__border-color--info);
+  color: var(--stsv-common__color--info);
 }
 
 .sterling-label.success .message {
-  background-color: var(--stsv-status--success__background-color);
-  border-color: var(--stsv-status--success__border-color);
-  color: var(--stsv-status--success__color);
+  background-color: var(--stsv-common__background-color--success);
+  border-color: var(--stsv-common__border-color--success);
+  color: var(--stsv-common__color--success);
 }
 
 .sterling-label.warning .message {
-  background-color: var(--stsv-status--warning__background-color);
-  border-color: var(--stsv-status--warning__border-color);
-  color: var(--stsv-status--warning__color);
+  background-color: var(--stsv-common__background-color--warning);
+  border-color: var(--stsv-common__border-color--warning);
+  color: var(--stsv-common__color--warning);
 }
 
-.sterling-label.danger .message,
 .sterling-label.error .message {
-  background-color: var(--stsv-status--danger__background-color);
-  border-color: var(--stsv_--danger-color);
-  color: var(--stsv-status--danger__color);
+  background-color: var(--stsvcommon__background-color--error);
+  border-color: var(--stsv_common__border-color--error);
+  color: var(--stsvcommon__color--error);
 }
 
 .sterling-label .required {

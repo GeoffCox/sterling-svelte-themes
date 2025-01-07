@@ -1,0 +1,78 @@
+/* ----- blue ----- */
+
+.sterling-button.secondary.blue {
+  background-color: none;
+  border-color: hsl(200, 100%, 30%);
+  color: hsl(200, 100%, 30%);
+}
+.sterling-button.secondary.blue:hover {
+  background-color: hsl(200, 100%, 50%);
+  border-color: hwb(200 0% 40%);
+  color: hsl(200, 100%, 95%);
+}
+
+.sterling-button.secondary.blue:active {
+  background-color: hsl(200, 100%, 40%);
+  border-color: hsl(200, 100%, 60%);
+  color: hsl(200, 100%, 95%);
+}
+
+/* ----- green ----- */
+.sterling-button.secondary.green {
+  background-color: none;
+  border-color: hsl(146, 100%, 25%);
+  color: hsl(146, 100%, 25%);
+}
+
+.sterling-button.secondary.green:hover,
+.sterling-button.secondary.green:focus {
+  background-color: hsl(146, 100%, 40%);
+  border-color: hsl(146, 100%, 25%);
+  color: hsl(146, 100%, 95%);
+}
+
+.sterling-button.secondary.green:active {
+  background-color: hsl(146, 100%, 30%);
+  border-color: hsl(146, 100%, 40%);
+  color: hsl(146, 100%, 95%);
+}
+
+/* ----- orange ----- */
+.sterling-button.secondary.orange {
+  background-color: none;
+  border-color: hsl(45, 100%, 50%);
+  color: hsl(45, 100%, 50%);
+}
+
+.sterling-button.secondary.orange:hover,
+.sterling-button.secondary.orange:focus {
+  background-color: hsl(45, 100%, 70%);
+  border-color: hsl(45, 100%, 50%);
+  color: hsl(45, 25%, 25%);
+}
+
+.sterling-button.secondary.orange:active {
+  background-color: hsl(45, 100%, 60%);
+  border-color: hsl(45, 100%, 70%);
+  color: hsl(45, 25%, 25%);
+}
+
+/* ----- red ----- */
+.sterling-button.secondary.red {
+  background-color: none;
+  border-color: hsl(0, 80%, 30%);
+  color: hsl(0, 80%, 30%);
+}
+
+.sterling-button.secondary.red:hover,
+.sterling-button.secondary.red:focus {
+  background-color: hsl(0, 80%, 50%);
+  border-color: hsl(0, 80%, 30%);
+  color: hsl(0, 100%, 95%);
+}
+
+.sterling-button.secondary.red:active {
+  background-color: hsl(0, 80%, 40%);
+  border-color: hsl(0, 80%, 50%);
+  color: hsl(0, 100%, 95%);
+}
