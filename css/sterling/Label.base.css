@@ -81,9 +81,9 @@
 }
 
 .sterling-label.error .message {
-  background-color: var(--stsvcommon__background-color--error);
-  border-color: var(--stsv_common__border-color--error);
-  color: var(--stsvcommon__color--error);
+  background-color: var(--stsv-common__background-color--error);
+  border-color: var(--stsv-common__border-color--error);
+  color: var(--stsv-common__color--error);
 }
 
 .sterling-label .required {
