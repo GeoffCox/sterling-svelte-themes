@@ -3,68 +3,89 @@
 .sterling-button.tool.blue {
   background-color: none;
   border-color: none;
-  color: hsl(200, 100%, 30%);
+  color: var(--stsv-button__border-color--blue);
 }
+
 .sterling-button.tool.blue:hover {
-  background-color: hsl(200, 100%, 50%);
-  color: hsl(200, 100%, 95%);
+  background-color: var(--stsv-button__background-color--blue-hover);
+  color: var(--stsv-button__color--blue-hover);
+}
+
+.sterling-button.tool.blue:focus {
+  background-color: var(--stsv-button__background-color--blue-focus);
+  color: var(--stsv-button__color--blue-focus);
 }
 
 .sterling-button.tool.blue:active {
-  background-color: hsl(200, 100%, 40%);
-  color: hsl(200, 100%, 95%);
+  background-color: var(--stsv-button__background-color--blue-active);
+  color: var(--stsv-button__color--blue-active);
 }
 
 /* ----- green ----- */
+
 .sterling-button.tool.green {
   background-color: none;
   border-color: none;
-  color: hsl(146, 100%, 25%);
+  color: var(--stsv-button__border-color--green);
 }
 
-.sterling-button.tool.green:hover,
+.sterling-button.tool.green:hover {
+  background-color: var(--stsv-button__background-color--green-hover);
+  color: var(--stsv-button__color--green-hover);
+}
+
 .sterling-button.tool.green:focus {
-  background-color: hsl(146, 100%, 40%);
-  color: hsl(146, 100%, 95%);
+  background-color: var(--stsv-button__background-color--green-focus);
+  color: var(--stsv-button__color--green-focus);
 }
 
 .sterling-button.tool.green:active {
-  background-color: hsl(146, 100%, 30%);
-  color: hsl(146, 100%, 95%);
+  background-color: var(--stsv-button__background-color--green-active);
+  color: var(--stsv-button__color--green-active);
 }
 
 /* ----- orange ----- */
+
 .sterling-button.tool.orange {
   background-color: none;
   border-color: none;
-  color: hsl(45, 100%, 50%);
+  color: var(--stsv-button__border-color--orange);
 }
 
-.sterling-button.tool.orange:hover,
+.sterling-button.tool.orange:hover {
+  background-color: var(--stsv-button__background-color--orange-hover);
+  color: var(--stsv-button__color--orange-hover);
+}
+
 .sterling-button.tool.orange:focus {
-  background-color: hsl(45, 100%, 70%);
-  color: hsl(45, 25%, 25%);
+  background-color: var(--stsv-button__background-color--orange-focus);
+  color: var(--stsv-button__color--orange-focus);
 }
 
 .sterling-button.tool.orange:active {
-  background-color: hsl(45, 100%, 60%);
-  color: hsl(45, 25%, 25%);
+  background-color: var(--stsv-button__background-color--orange-active);
+  color: var(--stsv-button__color--orange-active);
 }
 
 /* ----- red ----- */
+
 .sterling-button.tool.red {
   background-color: none;
   border-color: none;
-  color: hsl(0, 80%, 30%);
+  color: var(--stsv-button__border-color--red);
 }
 
-.sterling-button.tool.red:hover,
+.sterling-button.tool.red:hover {
+  background-color: var(--stsv-button__background-color--red-hover);
+  color: var(--stsv-button__color--red-hover);
+}
+
 .sterling-button.tool.red:focus {
-  background-color: hsl(0, 80%, 50%);
-  color: hsl(0, 100%, 95%);
+  background-color: var(--stsv-button__background-color--red-focus);
+  color: var(--stsv-button__color--red-focus);
 }
 
 .sterling-button.tool.red:active {
-  background-color: hsl(0, 80%, 40%);
-  color: hsl(0, 100%, 95%);
+  background-color: var(--stsv-button__background-color--red-active);
+  color: var(--stsv-button__color--red-active);
 }
