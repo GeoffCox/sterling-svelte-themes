@@ -27,6 +27,7 @@
 		The input is hidden since the built-in browser radio cannot be customized
 	*/
 .sterling-radio input {
+  appearance: none;
   font: inherit;
   margin: 0;
   padding: 0;

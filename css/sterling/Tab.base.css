@@ -1,6 +1,7 @@
 .sterling-tab {
   align-content: center;
   align-items: center;
+  appearance: none;
   background-color: var(--stsv-common__background-color);
   border-color: transparent;
   border-radius: 8px;

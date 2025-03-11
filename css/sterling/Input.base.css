@@ -7,6 +7,7 @@
 }
 
 .sterling-input input {
+  appearance: none;
   background-color: var(--stsv-input__background-color);
   border-color: transparent;
   border-bottom-color: var(--stsv-input__border-color);

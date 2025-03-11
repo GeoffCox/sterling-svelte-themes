@@ -5,6 +5,7 @@
 }
 
 .sterling-text-area textarea {
+  appearance: none;
   background-color: var(--stsv-input__background-color);
   border-color: var(--stsv-input__border-color);
   border-radius: 3px;

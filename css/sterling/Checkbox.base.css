@@ -27,6 +27,7 @@ The container
 The input is hidden since the built-in browser checkbox cannot be customized
 */
 .sterling-checkbox input {
+  appearance: none;
   font: inherit;
   margin: 0;
   padding: 0;

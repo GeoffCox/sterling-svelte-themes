@@ -1,4 +1,5 @@
 .sterling-menu-item {
+  appearance: none;
   background-color: transparent;
   border-color: transparent;
   border-radius: 8px;

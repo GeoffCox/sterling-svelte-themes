@@ -1,6 +1,7 @@
 .sterling-button {
   align-content: center;
   align-items: center;
+  appearance: none;
   background-color: var(--stsv-button__background-color);
   border-color: var(--stsv-button__border-color);
   border-radius: 8px;
