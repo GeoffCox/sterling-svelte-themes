@@ -1,1 +1,3 @@
 @import url('./MenuItem.base.css');
+@import url('./MenuItem.defaultItem.css');
+@import url('./MenuItem.defaultItem.disabled.css');

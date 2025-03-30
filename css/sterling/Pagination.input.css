@@ -1,0 +1,50 @@
+.sterling-pagination input {
+  appearance: none;
+  background-color: var(--stsv-input__background-color);
+  border-color: transparent;
+  border-bottom-color: var(--stsv-input__border-color);
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: var(--stsv-input__color);
+  display: block;
+  font: inherit;
+  height: 100%;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-align: center;
+  transition:
+    background-color 250ms,
+    color 250ms,
+    border-color 250ms;
+  width: 100%;
+  min-width: calc(var(--page-number-width, 1ch) + 1em);
+}
+
+.sterling-pagination input:not(:disabled) {
+  background-color: var(--stsv-input__background-color--hover);
+  border-bottom-color: var(--stsv-input__border-color--hover);
+  color: var(--stsv-input__color--hover);
+}
+
+.sterling-pagination input:focus,
+.sterling-pagination input:focus {
+  background-color: var(--stsv-input__background-color--focus);
+  border-bottom-color: var(--stsv-input__border-color--focus);
+  color: var(--stsv-input__color--focus);
+}
+
+.sterling-pagination input:focus-visible {
+  outline-color: var(--stsv-common__outline-color);
+  outline-offset: 0;
+  outline-style: solid;
+  outline-width: 2px;
+  outline: none;
+}
+@media (prefers-reduced-motion) {
+  .sterling-pagination input {
+    transition: none;
+  }
+}

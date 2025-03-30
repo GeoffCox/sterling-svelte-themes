@@ -78,7 +78,8 @@
   transform-origin: 50% 50%;
 }
 
-.sterling-select-popup-content {
+.sterling-select-popup-content,
+.sterling-select-content {
   background-color: var(--stsv-common__background-color);
   border-color: var(--stsv-common__border-color);
   border-radius: 0;

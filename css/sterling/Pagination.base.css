@@ -1,0 +1,18 @@
+.sterling-pagination {
+  box-sizing: border-box;
+  column-gap: 3px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-self: center;
+  place-content: center;
+  place-items: stretch;
+  width: min-content;
+  overscroll-behavior: contain;
+}
+
+.sterling-pagination .page-number {
+  display: grid;
+  place-items: stretch;
+  place-content: stretch;
+  min-width: calc(var(--page-number-width, 1ch) + 1em);
+}
