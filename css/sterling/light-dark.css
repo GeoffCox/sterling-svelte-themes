@@ -1,0 +1,152 @@
+/*
+* The Sterling Theme CSS variables supporting light-dark() automatically.
+*
+*/
+
+:root {
+    color-scheme: light dark;
+}
+
+:root,
+.sterling-theme {
+  /* ----- common ----- */
+
+  --stsv-common__background-color: light-dark(hsl(0, 0%, 100%), hsl(0, 0%, 15%));
+  --stsv-common__border-color: light-dark(hsl(0, 0%, 45%), hsl(0, 0%, 92%));
+  --stsv-common__color: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 100%));
+
+  /* ----- common outline ----- */
+
+  --stsv-common__outline-color: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 100%));
+  --stsv-common__outline-offset: 0;
+  --stsv-common__outline-style: solid;
+  --stsv-common__outline-width: 2px;
+
+  /* ----- common disabled ----- */
+
+  --stsv-common--disabled__stripe-color: light-dark(hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2));
+  --stsv-common--disabled__stripe-color--alt: light-dark(hsla(0, 0%, 100%, 0.2), hsla(0, 0%, 100%, 0.2));
+  --stsv-common--disabled__stripe-angle: 135deg;
+  --stsv-common--disabled__stripe-width: 3px;
+
+  /* ----- common drop shadows ----- */
+
+  --stsv-common__box-shadow__color: light-dark(rgba(0, 0, 0, 0.4), gba(128, 128, 128, 0.7));
+  --stsv-common__box-shadow__color--inset: light-dark(rgba(0, 0, 0, 0.45), gba(128, 128, 128, 0.7));
+  --stsv-common__box-shadow: 2px 2px 4px 0px var(--stsv-common__box-shadow__color);
+  --stsv-common__box-shadow--inset: inset 1px 1px 2px 0px var(--stsv-common__box-shadow__color--inset);
+
+  /* ----- common reduced emphasis ----- */
+
+  --stsv-common__background-color--secondary: light-dark(hsl(0, 0%, 92%), hsl(0, 0%, 20%));
+  --stsv-common__color--secondary: light-dark(hsl(0, 0%, 45%), hsl(0, 0%, 60%));
+  --stsv-common__background-color--subtle: light-dark(hsl(0, 0%, 96%), hsl(0, 0%, 15%));
+  --stsv-common__color--subtle: light-dark(hsl(0, 0%, 75%), hsl(0, 0%, 45%));
+  --stsv-common__background-color--faint: light-dark(hsl(0, 0%, 98%), hsl(0, 0%, 12%));
+  --stsv-common__color--faint: light-dark(hsl(0, 0%, 92%), hsl(0, 0%, 30%));
+
+  /* ----- common colors ----- */
+
+  --stsv-common__background-color--info: light-dark(hsl(200, 100%, 90%), hsl(200, 100%, 25%));
+  --stsv-common__border-color--info: light-dark(hsl(200, 100%, 40%), hsl(200, 100%, 80%));
+  --stsv-common__color--info: light-dark(hsl(200, 100%, 40%), hsl(200, 100%, 80%));
+  --stsv-common__background-color--success: light-dark(hsl(146, 100%, 90%), hsl(146, 100%, 25%));
+  --stsv-common__border-color--success: light-dark(hsl(146, 100%, 30%), hsl(146, 100%, 80%));
+  --stsv-common__color--success: light-dark(hsl(146, 80%, 25%), hsl(146, 100%, 80%));
+  --stsv-common__background-color--warning: light-dark(hsl(45, 100%, 80%), hsl(45, 100%, 25%));
+  --stsv-common__border-color--warning: light-dark(hsl(45, 100%, 45%), hsl(45, 100%, 80%));
+  --stsv-common__color--warning: light-dark(hsl(45, 100%, 25%), hsl(45, 100%, 80%));
+  --stsv-common__background-color--error: light-dark(hsl(0, 100%, 90%), hsl(0, 100%, 25%));
+  --stsv-common__border-color--error: light-dark(hsl(0, 100%, 40%), hsl(0, 100%, 80%));
+  --stsv-common__color--error: light-dark(hsl(0, 80%, 40%), hsl(0, 100%, 80%));
+
+  /* ----- button ----- */
+
+  --stsv-button__background-color: light-dark(hsl(0, 0%, 90%), hsl(0, 0%, 20%));
+  --stsv-button__border-color: light-dark(hsl(0, 0%, 45%), hsl(0, 0%, 80%));
+  --stsv-button__color: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 85%));
+
+  --stsv-button__background-color--hover: light-dark(hsl(0, 0%, 95%), hsl(0, 0%, 25%));
+  --stsv-button__border-color--hover: light-dark(hsl(0, 0%, 30%), hsl(0, 0%, 80%));
+  --stsv-button__color--hover: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 85%));
+
+  --stsv-button__background-color--focus: light-dark(hsl(0, 0%, 95%), hsl(0, 0%, 25%));
+  --stsv-button__border-color--focus: light-dark(hsl(0, 0%, 30%), hsl(0, 0%, 80%));
+  --stsv-button__color--focus: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 85%));
+
+  --stsv-button__background-color--active: light-dark(hsl(0, 0%, 75%), hsl(0, 0%, 45%));
+  --stsv-button__border-color--active: light-dark(hsl(0, 0%, 95%), hsl(0, 0%, 10%));
+  --stsv-button__color--active: light-dark(hsl(0, 0%, 12%), hsl(0, 0%, 15%));
+
+  /* ----- button colors ----- */
+
+  --stsv-button__background-color--blue: light-dark(hsl(200, 100%, 40%), hsl(200, 100%, 10%));
+  --stsv-button__border-color--blue: light-dark(hsl(200, 100%, 30%), hsl(200, 100%, 50%));
+  --stsv-button__color--blue: light-dark(hsl(200, 100%, 95%), hsl(200, 100%, 60%));
+  --stsv-button__background-color--blue-hover: light-dark(hsl(200, 100%, 50%), hsl(200, 100%, 15%));
+  --stsv-button__border-color--blue-hover: light-dark(hsl(200, 100%, 30%), hsl(200, 100%, 50%));
+  --stsv-button__color--blue-hover: light-dark(hsl(200, 100%, 95%), hsl(200, 100%, 60%));
+  --stsv-button__background-color--blue-focus: light-dark(hsl(200, 100%, 50%), hsl(200, 100%, 15%));
+  --stsv-button__border-color--blue-focus: light-dark(hsl(200, 100%, 30%), hsl(200, 100%, 50%));
+  --stsv-button__color--blue-focus: light-dark(hsl(200, 100%, 95%), hsl(200, 100%, 60%));
+  --stsv-button__background-color--blue-active: light-dark(hsl(200, 100%, 40%), hsl(200, 100%, 30%));
+  --stsv-button__border-color--blue-active: light-dark(hsl(200, 100%, 60%), hsl(200, 100%, 10%));
+  --stsv-button__color--blue-active: light-dark(hsl(200, 100%, 95%), hsl(200, 100%, 15%));
+
+  --stsv-button__background-color--green: light-dark(hsl(146, 100%, 30%), hsl(146, 100%, 10%));
+  --stsv-button__border-color--green: light-dark(hsl(146, 100%, 25%), hsl(146, 100%, 30%));
+  --stsv-button__color--green: light-dark(hsl(146, 100%, 95%), hsl(146, 100%, 40%));
+  --stsv-button__background-color--green-hover: light-dark(hsl(146, 100%, 40%), hsl(146, 100%, 15%));
+  --stsv-button__border-color--green-hover: light-dark(hsl(146, 100%, 25%), hsl(146, 100%, 30%));
+  --stsv-button__color--green-hover: light-dark(hsl(146, 100%, 95%), hsl(146, 100%, 40%));
+  --stsv-button__background-color--green-focus: light-dark(hsl(146, 100%, 40%), hsl(146, 100%, 15%));
+  --stsv-button__border-color--green-focus: light-dark(hsl(146, 100%, 25%), hsl(146, 100%, 30%));
+  --stsv-button__color--green-focus: light-dark(hsl(146, 100%, 95%), hsl(146, 100%, 40%));
+  --stsv-button__background-color--green-active: light-dark(hsl(146, 100%, 30%), hsl(146, 100%, 25%));
+  --stsv-button__border-color--green-active: light-dark(hsl(146, 100%, 40%), hsl(146, 100%, 10%));
+  --stsv-button__color--green-active: light-dark(hsl(146, 100%, 95%), hsl(146, 100%, 15%));
+
+  --stsv-button__background-color--orange: light-dark(hsl(45, 100%, 60%), hsl(45, 100%, 10%));
+  --stsv-button__border-color--orange: light-dark(hsl(45, 100%, 50%), hsl(45, 100%, 40%));
+  --stsv-button__color--orange: light-dark(hsl(45, 25%, 25%), hsl(45, 100%, 50%));
+  --stsv-button__background-color--orange-hover: light-dark(hsl(45, 100%, 70%), hsl(45, 100%, 15%));
+  --stsv-button__border-color--orange-hover: light-dark(hsl(45, 100%, 50%), hsl(45, 100%, 40%));
+  --stsv-button__color--orange-hover: light-dark(hsl(45, 25%, 25%), hsl(45, 100%, 50%));
+  --stsv-button__background-color--orange-focus: light-dark(hsl(45, 100%, 70%), hsl(45, 100%, 15%));
+  --stsv-button__border-color--orange-focus: light-dark(hsl(45, 100%, 50%), hsl(45, 100%, 40%));
+  --stsv-button__color--orange-focus: light-dark(hsl(45, 25%, 25%), hsl(45, 100%, 50%));
+  --stsv-button__background-color--orange-active: light-dark(hsl(45, 100%, 60%), hsl(45, 100%, 30%));
+  --stsv-button__border-color--orange-active: light-dark(hsl(45, 100%, 70%), hsl(45, 100%, 10%));
+  --stsv-button__color--orange-active: light-dark(hsl(45, 25%, 25%), hsl(45, 100%, 15%));
+
+  --stsv-button__background-color--red: light-dark(hsl(0, 80%, 40%), hsl(0, 100%, 10%));
+  --stsv-button__border-color--red: light-dark(hsl(0, 80%, 30%), hsl(0, 100%, 30%));
+  --stsv-button__color--red: light-dark(hsl(0, 100%, 95%), hsl(0, 100%, 40%));
+  --stsv-button__background-color--red-hover: light-dark(hsl(0, 80%, 50%), hsl(0, 100%, 15%));
+  --stsv-button__border-color--red-hover: light-dark(hsl(0, 80%, 30%), hsl(0, 100%, 30%));
+  --stsv-button__color--red-hover: light-dark(hsl(0, 100%, 95%), hsl(0, 100%, 40%));
+  --stsv-button__background-color--red-focus: light-dark(hsl(0, 80%, 50%), hsl(0, 100%, 15%));
+  --stsv-button__border-color--red-focus: light-dark(hsl(0, 80%, 30%), hsl(0, 100%, 30%));
+  --stsv-button__color--red-focus: light-dark(hsl(0, 100%, 95%), hsl(0, 100%, 40%));
+  --stsv-button__background-color--red-active: light-dark(hsl(0, 80%, 40%), hsl(0, 100%, 25%));
+  --stsv-button__border-color--red-active: light-dark(hsl(0, 80%, 50%), hsl(0, 100%, 10%));
+  --stsv-button__color--red-active: light-dark(hsl(0, 100%, 95%), hsl(0, 100%, 15%));
+
+  /* ----- input ----- */
+
+  --stsv-input__background-color: light-dark(hsl(0, 0%, 98%), hsl(0, 0%, 20%));
+  --stsv-input__border-color: light-dark(hsl(0, 0%, 60%), hsl(0, 0%, 92%));
+  --stsv-input__color: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 100%));
+
+  --stsv-input__background-color--hover: light-dark(hsl(0, 0%, 96%), hsl(0, 0%, 25%));
+  --stsv-input__border-color--hover: light-dark(hsl(0, 0%, 30%), hsl(0, 0%, 96%));
+  --stsv-input__color--hover: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 100%));
+
+  --stsv-input__background-color--focus: light-dark(hsl(0, 0%, 92%), hsl(0, 0%, 25%));
+  --stsv-input__border-color--focus: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 100%));
+  --stsv-input__color--focus: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 100%));
+
+  --stsv-input__background-color--selected: light-dark(hsl(0, 0%, 85%), hsl(0, 0%, 45%));
+  --stsv-input__border-color--selected: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 98%));
+  --stsv-input__color--selected: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 100%));
+}

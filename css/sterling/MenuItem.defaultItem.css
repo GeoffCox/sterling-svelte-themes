@@ -1,3 +1,4 @@
+.sterling-menu-item .default-item,
 .sterling-menu-item-display {
   align-items: center;
   justify-items: flex-start;
@@ -8,24 +9,23 @@
   position: relative;
 }
 
+.sterling-menu-item .default-item .check,
 .sterling-menu-item-display .check {
   box-sizing: border-box;
   pointer-events: none;
   width: 20px;
   height: 20px;
   position: relative;
-  transition:
-    background-color 250ms,
-    color 250ms,
-    border-color 250ms;
+  transition: background-color 250ms, color 250ms, border-color 250ms;
 }
 
+.sterling-menu-item .default-item .check.checkmark.checked::after,
 .sterling-menu-item-display .check.checkmark.checked::after {
   border-color: currentColor;
   border-style: solid;
   border-width: 0 0.2em 0.2em 0;
   box-sizing: border-box;
-  content: '';
+  content: "";
   height: 0.8em;
   left: 45%;
   position: absolute;
@@ -36,10 +36,11 @@
   width: 0.4em;
 }
 
+.sterling-menu-item .default-item .check.bullet.checked::after,
 .sterling-menu-item-display .check.bullet.checked::after {
   background-color: currentColor;
   border-radius: 10000px;
-  content: '';
+  content: "";
   height: 0.5em;
   left: 45%;
   position: absolute;
@@ -49,11 +50,13 @@
   width: 0.5em;
 }
 
+.sterling-menu-item .default-item .shortcut,
 .sterling-menu-item-display .shortcut {
   font-size: 0.8em;
   color: var(--stsv-common__color--secondary);
 }
 
+.sterling-menu-item .default-item .chevron,
 .sterling-menu-item-display .chevron {
   position: relative;
   border: none;
@@ -63,9 +66,10 @@
   transform-origin: 50% 50%;
 }
 
+.sterling-menu-item .default-item .chevron.has-children::after,
 .sterling-menu-item-display .chevron.has-children::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   left: 50%;
   width: 7px;
@@ -76,8 +80,11 @@
 }
 
 @media (prefers-reduced-motion) {
+  .sterling-menu-item .default-item::after,
   .sterling-menu-item-display::after,
+  .sterling-menu-item .default-item .check,
   .sterling-menu-item-display .check,
+  .sterling-menu-item .default-item .check::after,
   .sterling-menu-item-display .check::after {
     transition: none;
   }

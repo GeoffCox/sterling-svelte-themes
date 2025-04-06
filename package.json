@@ -1,6 +1,6 @@
 {
   "name": "@geoffcox/sterling-svelte-themes",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Geoff Cox",
   "description": "A modern theme for the sterling-svelte component library.",
   "license": "MIT",
@@ -28,6 +28,7 @@
   },
   "exports": {
     "./sterling.css": "./css/sterling.css",
+    "./sterling-light-dark.css": "./css/sterling-light-dark.css",
     "./sterling/*.css": "./css/sterling/*.css"
   },
   "sideEffects": [
