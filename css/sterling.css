@@ -1,5 +1,4 @@
-@import url("./sterling/light-mode.css");
-@import url("./sterling/dark-mode.css");
+@import url("./sterling/vars.css");
 
 @import url("./sterling/Button.css");
 @import url("./sterling/Callout.css");
