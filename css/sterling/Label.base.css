@@ -37,11 +37,15 @@
   color: var(--stsv-common__color--secondary);
   font-size: 0.8em;
   grid-area: text;
-  margin-right: 0.635em;
+  justify-self: flex-start;
 }
 
-.sterling-label .text:empty {
-  margin: 0;
+.sterling-label:not(.vertical) .text:not(:empty) {
+  margin-right: 0.5em;
+}
+
+.sterling-label.vertical .text:not(:empty) {
+  margin-bottom: 0.25em;
 }
 
 .sterling-label .content {
@@ -98,9 +102,9 @@
   right: 0;
 }
 
-.sterling-label .required-reason {
+.sterling-label-tooltip .required-reason {
   display: block;
-  padding: 4px;
+  padding: 0.125em;
 }
 
 @media (prefers-reduced-motion) {
