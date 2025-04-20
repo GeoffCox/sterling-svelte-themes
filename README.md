@@ -22,6 +22,10 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 ## Change Log
 
+### 2.0.2
+
+- Autocomplete - added styles
+
 ### 2.0.1
 
 - Label - fix justification of text vs chilren in horizontal layout
