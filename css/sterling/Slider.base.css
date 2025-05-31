@@ -83,13 +83,30 @@
   height: 3px;
   top: 50%;
   transform: translate(0, -50%);
+  width: var(--valueOffset);
+}
+
+.sterling-slider.horizontal:not(.reverse) .fill {
+  left: 0;
+}
+
+.sterling-slider.horizontal.reverse .fill {
+  right: 0;
 }
 
 .sterling-slider.vertical .fill {
-  bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
   width: 3px;
+  height: var(--valueOffset);
+}
+
+.sterling-slider.vertical:not(.reverse) .fill {
+  bottom: 0;
+}
+
+.sterling-slider.vertical.reverse .fill {
+  top: 0;
 }
 
 /* ----- thumb ----- */
@@ -118,14 +135,28 @@
   width: 1.5em;
 }
 
-.sterling-slider.horizontal .thumb {
+.sterling-slider.horizontal:not(.reverse) .thumb {
   top: 50%;
   transform: translate(-50%, -50%);
+  left: var(--valueOffset);
 }
 
-.sterling-slider.vertical .thumb {
+.sterling-slider.horizontal.reverse .thumb {
+  top: 50%;
+  transform: translate(50%, -50%);
+  right: var(--valueOffset);
+}
+
+.sterling-slider.vertical:not(.reverse) .thumb {
   left: 50%;
   transform: translate(-50%, 50%);
+  bottom: var(--valueOffset);
+}
+
+.sterling-slider.vertical.reverse .thumb {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: var(--valueOffset);
 }
 
 .thumb:hover {

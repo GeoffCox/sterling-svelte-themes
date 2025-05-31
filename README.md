@@ -22,6 +22,10 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 ## Change Log
 
+### 2.0.3
+
+- Slider - support for reverse direction of slider
+
 ### 2.0.2
 
 - Autocomplete - added styles
