@@ -6,6 +6,10 @@
   border-width: 2px;
 }
 
+.sterling-label.boxed:not(.vertical) {
+  grid-template-areas: 'text content' 'message message';
+}
+
 .sterling-label.boxed:not(.disabled):hover {
   background-color: var(--stsv-input__background-color--hover);
   border-color: var(--stsv-input__border-color--hover);

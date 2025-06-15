@@ -21,7 +21,7 @@
 /* ----- horizontal | vertical ----- */
 
 .sterling-label:not(.vertical) {
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: 'text content' '. message';
 }
@@ -49,7 +49,7 @@
 }
 
 .sterling-label .content {
-  display: grid;
+  display: contents;
   grid-area: content;
 }
 

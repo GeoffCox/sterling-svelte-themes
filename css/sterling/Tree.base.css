@@ -16,12 +16,12 @@
     border-color 250ms;
 }
 
-.sterling-tree:hover {
+.sterling-tree:not(.disabled):hover {
   border-color: var(--stsv-input__border-color--hover);
   color: var(--stsv-input__color--hover);
 }
 
-.sterling-tree.using-keyboard:focus-within {
+.sterling-tree:not(.disabled).using-keyboard:focus-within {
   border-color: var(--stsv-button__border-color--focus);
   color: var(--stsv-input__color--focus);
   outline-color: var(--stsv-common__outline-color);

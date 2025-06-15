@@ -1,7 +1,7 @@
-.sterling-list.disabled * {
+.sterling-list.disabled {
+  background-color: var(--stsv-common__background-color--disabled);
+  border-color: var(--stsv-input__border-color--disabled);
+  color: var(--stsv-input__color--disabled);
   cursor: not-allowed;
 }
 
-.sterling-list.disabled .container::after {
-  opacity: 1;
-}

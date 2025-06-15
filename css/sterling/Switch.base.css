@@ -71,13 +71,13 @@
   user-select: none;
 }
 
-.sterling-switch:hover .toggle {
+.sterling-switch:not(.disabled):hover .toggle {
   background-color: var(--stsv-input__background-color--hover);
   border-color: var(--stsv-input__border-color--hover);
   color: var(--stsv-input__color--hover);
 }
 
-input:focus-visible ~ .toggle {
+.sterling-switch:not(.disabled) input:focus-visible ~ .toggle {
   background-color: var(--stsv-input__background-color--focus);
   border-color: var(--stsv-input__border-color--focus);
   color: var(--stsv-common__color--focux);
@@ -87,9 +87,9 @@ input:focus-visible ~ .toggle {
   outline-width: 2px;
 }
 
-input:checked ~ .toggle,
-input:checked:hover ~ .toggle,
-input:checked:focus-visible ~ .toggle {
+.sterling-switch:not(.disabled) input:checked ~ .toggle,
+.sterling-switch:not(.disabled) input:checked:hover ~ .toggle,
+.sterling-switch:not(.disabled) input:checked:focus-visible ~ .toggle {
   background-color: var(--stsv-input__border-color--hover);
 }
 
@@ -107,14 +107,11 @@ input:checked:focus-visible ~ .toggle {
 
 /* ----- labels ----- */
 
-.sterling-switch label {
-  color: var(--stsv-common__color);
-  transition: color 250ms;
-  font: inherit;
-}
-
 .sterling-switch .off-label,
 .sterling-switch .on-label {
+  color: currentColor;
+  transition: color 250ms;
+  font: inherit;
   padding-top: 2px;
 }
 
@@ -140,13 +137,13 @@ input:checked:focus-visible ~ .toggle {
   width: 1.25em;
 }
 
-.sterling-switch:hover .thumb {
+.sterling-switch:not(.disabled):hover .thumb {
   background-color: var(--stsv-button__background-color--hover);
   border-color: var(--stsv-button__border-color--hover);
   color: var(--stsv-button__color--hover);
 }
 
-.sterling-switch:active .thumb {
+.sterling-switch:not(.disabled):active .thumb {
   background-color: var(--stsv-button__background-color--active);
   border-color: var(--stsv-button__border-color--active);
   color: var(--stsv-button__color--hover);

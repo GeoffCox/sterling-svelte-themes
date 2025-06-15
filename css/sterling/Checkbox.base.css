@@ -59,7 +59,7 @@ and there is not a parent CSS selector.
   pointer-events: none;
 }
 
-.sterling-checkbox input:checked + .indicator {
+.sterling-checkbox:not(.disabled) input:checked + .indicator {
   background-color: var(--stsv-input__background-color);
   border-color: var(--stsv-input__border-color);
 }
@@ -80,7 +80,6 @@ and there is not a parent CSS selector.
 The checkmark is a rotated L centered in the box.
 */
 .sterling-checkbox .indicator::after {
-  border-color: var(--stsv-input__color);
   border-style: solid;
   border-width: 0 3px 3px 0;
   box-sizing: border-box;
@@ -92,14 +91,18 @@ The checkmark is a rotated L centered in the box.
   transform: translate(-50%, -50%) rotate(45deg);
   transform-origin: center;
   transition:
-    border-color 250ms,
-    opacity 150ms;
+  border-color 250ms,
+  opacity 150ms;
   width: 7px;
   opacity: 0;
 }
 
 .sterling-checkbox input:checked + .indicator::after {
   opacity: 1;
+}
+
+.sterling-checkbox:not(.disabled) .indicator::after {
+  border-color: var(--stsv-input__color);
 }
 
 .sterling-checkbox:not(.disabled):hover input:checked + .indicator::after {

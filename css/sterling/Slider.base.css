@@ -159,13 +159,13 @@
   top: var(--valueOffset);
 }
 
-.thumb:hover {
+.sterling-slider:not(.disabled) .thumb:hover {
   background-color: var(--stsv-button__background-color--hover);
   border-color: var(--stsv-button__border-color--hover);
   color: var(--stsv-button__color--hover);
 }
 
-.thumb:active {
+.sterling-slider:not(.disabled) .thumb:active {
   background-color: var(--stsv-button__background-color--active);
   border-color: var(--stsv-button__border-color--active);
   color: var(--stsv-button__color--active);

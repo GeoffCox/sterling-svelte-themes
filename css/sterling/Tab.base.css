@@ -61,7 +61,7 @@
 .sterling-tab .indicator {
   background-color: transparent;
   border-radius: 10000px;
-  transition: background-color 500ms;
+  transition: background-color 250ms;
 }
 
 .sterling-tab:not(.vertical) .indicator {
@@ -74,15 +74,15 @@
   width: 0.4em;
 }
 
-.sterling-tab:not(.selected):not(:active):hover .indicator {
+.sterling-tab:not(:disabled):not(.selected):not(:active):hover .indicator {
   background-color: var(--stsv-common__color--subtle);
 }
 
-.sterling-tab:active .indicator {
+.sterling-tab:not(:disabled):active .indicator {
   background-color: var(--stsv-input__border-color--selected);
 }
 
-.sterling-tab.selected .indicator {
+.sterling-tab:not(:disabled).selected .indicator {
   background-color: var(--stsv-input__border-color--selected);
 }
 

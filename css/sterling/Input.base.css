@@ -41,14 +41,6 @@
   color: var(--stsv-input__color--focus);
 }
 
-input:focus-visible {
-  outline-color: var(--stsv-common__outline-color);
-  outline-offset: 0;
-  outline-style: solid;
-  outline-width: 2px;
-  outline: none;
-}
-
 /* ----- placeholder ----- */
 
 input::placeholder {

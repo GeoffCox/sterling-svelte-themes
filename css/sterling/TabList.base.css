@@ -23,7 +23,7 @@
   row-gap: 0.5em;
 }
 
-.sterling-tab-list:hover {
+.sterling-tab-list:not(.disabled):hover {
   color: var(--stsv-common__color--hover);
 }
 

@@ -20,13 +20,13 @@
     border-color 250ms;
 }
 
-.sterling-select:hover {
+.sterling-select:not(.disabled):hover {
   background-color: var(--stsv-input__background-color--hover);
   border-color: var(--stsv-input__border-color--hover);
   color: var(--stsv-input__color--hover);
 }
 
-.sterling-select:focus {
+.sterling-select:not(.disabled):focus {
   background-color: var(--stsv-input__background-color--focus);
   border-color: var(--stsv-input__border-color--focus);
   color: var(--stsv-input__color--focus);

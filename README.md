@@ -22,6 +22,14 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 ## Change Log
 
+### 2.0.4
+
+- Standardized disabled styles: Removed no-step diagonal stripes in favor of traditional background, border, and color.
+- Removed progress disabled styling (progress is not interactive)
+- Improved layout of Label to help content/input responsd to width changes
+- Improved layout of Label with boxed style to display message across the bottom.
+- Fixed modifies of button colors to separate multiple modifiers with multiple double dashes (e.g. --blue-hover => --blue--hover)
+ 
 ### 2.0.3
 
 - Slider - support for reverse direction of slider

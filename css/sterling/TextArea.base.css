@@ -30,13 +30,13 @@
   width: 100%;
 }
 
-.sterling-text-area textarea:hover {
+.sterling-text-area textarea:not(:disabled):hover {
   background-color: var(--stsv-input__background-color--hover);
   border-color: var(--stsv-input__border-color--hover);
   color: var(--stsv-input__color--hover);
 }
 
-.sterling-text-area textarea:focus {
+.sterling-text-area textarea:not(:disabled):focus {
   background-color: var(--stsv-input__background-color--focus);
   border-color: var(--stsv-input__border-color--focus);
   color: var(--stsv-input__color--focus);
