@@ -61,13 +61,6 @@
   width: 3px;
 }
 
-.sterling-slider:focus-visible {
-  outline-color: var(--stsv-common__outline-color);
-  outline-offset: 0;
-  outline-style: solid;
-  outline-width: 2px;
-}
-
 /* ----- fill ----- */
 
 .sterling-slider .fill {
@@ -116,7 +109,7 @@
   border-color: var(--stsv-button__border-color);
   border-radius: 10000px;
   border-style: solid;
-  border-width: 2px;
+  border-width: var(--stsv-button__border-width);
   box-sizing: border-box;
   color: var(--stsv-button__color);
   cursor: pointer;
@@ -124,6 +117,7 @@
   font: inherit;
   height: 1.5em;
   overflow: hidden;
+  outline: none;
   padding: 0;
   text-decoration: none;
   transition:
@@ -169,6 +163,13 @@
   background-color: var(--stsv-button__background-color--active);
   border-color: var(--stsv-button__border-color--active);
   color: var(--stsv-button__color--active);
+}
+
+.sterling-slider:not(.disabled).using-keyboard:focus-visible .thumb {
+  outline-color: var(--stsv-common__outline-color);
+  outline-offset: 0;
+  outline-style: solid;
+  outline-width: var(--stsv-common__outline-width);
 }
 
 /* ----- reduced motion ----- */

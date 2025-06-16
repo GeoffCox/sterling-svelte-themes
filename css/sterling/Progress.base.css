@@ -2,7 +2,7 @@
   align-content: flex-start;
   align-items: flex-start;
   background: var(--stsv-common__background-color);
-  border-width: 2px;
+  border-width: var(--stsv-common__border-width);
   border-style: solid;
   border-color: var(--stsv-common__border-color);
   border-radius: 0;

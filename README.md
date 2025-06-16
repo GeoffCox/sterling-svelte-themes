@@ -26,9 +26,18 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 - Standardized disabled styles: Removed no-step diagonal stripes in favor of traditional background, border, and color.
 - Removed progress disabled styling (progress is not interactive)
+- Fixed MenuItem disabled styling selector issue
 - Improved layout of Label to help content/input responsd to width changes
 - Improved layout of Label with boxed style to display message across the bottom.
 - Fixed modifies of button colors to separate multiple modifiers with multiple double dashes (e.g. --blue-hover => --blue--hover)
+- Fixed Switch hover, active, selected background colors for better contrast
+- Improved focus styles of Slider, Switch to focus on button/thumb element
+- Added border width variables for common, button, and input.
+- Fixed missing use of outline border width variable across all styles.
+- Reduced border and outline width from 2px to 1px to avoid heaviness with border styles
+- Fixed bug in Pagination missing input:hover style
+- Updated drop shadows to be consistent for Callout, Dialog, Dropdown, Menu, Select, and Tooltip.
+
  
 ### 2.0.3
 

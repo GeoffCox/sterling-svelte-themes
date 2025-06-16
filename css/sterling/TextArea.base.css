@@ -10,7 +10,7 @@
   border-color: var(--stsv-input__border-color);
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: var(--stsv-input__border-width);
   box-sizing: border-box;
   color: var(--stsv-input__color);
   display: block;
@@ -43,7 +43,7 @@
   outline-color: var(--stsv-common__outline-color);
   outline-offset: 0;
   outline-style: solid;
-  outline-width: 2px;
+  outline-width: var(--stsv-common__outline-width);
 }
 
 .sterling-text-area textarea::placeholder {

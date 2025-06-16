@@ -47,7 +47,7 @@
   outline-color: var(--stsv-common__outline-color);
   outline-offset: 0;
   outline-style: solid;
-  outline-width: 2px;
+  outline-width: var(--stsv-common__outline-width);
 }
 
 /* ----- content -----*/

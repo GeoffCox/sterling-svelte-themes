@@ -4,7 +4,7 @@
 */
 
 :root {
-    color-scheme: light dark;
+  color-scheme: light dark;
 }
 
 :root,
@@ -13,6 +13,7 @@
 
   --stsv-common__background-color: light-dark(hsl(0, 0%, 100%), hsl(0, 0%, 15%));
   --stsv-common__border-color: light-dark(hsl(0, 0%, 45%), hsl(0, 0%, 92%));
+  --stsv-common__border-width: 1px;
   --stsv-common__color: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 100%));
 
   /* ----- common outline ----- */
@@ -20,7 +21,7 @@
   --stsv-common__outline-color: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 100%));
   --stsv-common__outline-offset: 0;
   --stsv-common__outline-style: solid;
-  --stsv-common__outline-width: 2px;
+  --stsv-common__outline-width: 1px;
 
   /* ----- common disabled ----- */
 
@@ -30,10 +31,7 @@
 
   /* ----- common drop shadows ----- */
 
-  --stsv-common__box-shadow__color: light-dark(rgba(0, 0, 0, 0.4), gba(128, 128, 128, 0.7));
-  --stsv-common__box-shadow__color--inset: light-dark(rgba(0, 0, 0, 0.45), gba(128, 128, 128, 0.7));
-  --stsv-common__box-shadow: 2px 2px 4px 0px var(--stsv-common__box-shadow__color);
-  --stsv-common__box-shadow--inset: inset 1px 1px 2px 0px var(--stsv-common__box-shadow__color--inset);
+  --stsv-common__drop-shadow: drop-shadow(2px 2px 1px light-dark(rgba(0, 0, 0, 0.2), rgba(128, 128, 128, 0.2)));
 
   /* ----- common reduced emphasis ----- */
 
@@ -63,6 +61,7 @@
 
   --stsv-button__background-color: light-dark(hsl(0, 0%, 90%), hsl(0, 0%, 20%));
   --stsv-button__border-color: light-dark(hsl(0, 0%, 45%), hsl(0, 0%, 80%));
+  --stsv-button__border-width: 1px;
   --stsv-button__color: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 85%));
 
   --stsv-button__background-color--hover: light-dark(hsl(0, 0%, 95%), hsl(0, 0%, 25%));
@@ -80,7 +79,6 @@
   --stsv-button__background-color--disabled: light-dark(hsl(0, 0%, 95%), hsl(0, 0%, 25%));
   --stsv-button__border-color--disabled: light-dark(hsl(0, 0%, 80%), hsl(0, 0%, 30%));
   --stsv-button__color--disabled: light-dark(hsl(0, 0%, 80%), hsl(0, 0%, 30%));
-
 
   /* ----- button colors ----- */
 
@@ -140,6 +138,7 @@
 
   --stsv-input__background-color: light-dark(hsl(0, 0%, 98%), hsl(0, 0%, 20%));
   --stsv-input__border-color: light-dark(hsl(0, 0%, 60%), hsl(0, 0%, 92%));
+  --stsv-input__border-width: 1px;
   --stsv-input__color: light-dark(hsl(0, 0%, 15%), hsl(0, 0%, 100%));
 
   --stsv-input__background-color--hover: light-dark(hsl(0, 0%, 96%), hsl(0, 0%, 25%));

@@ -5,7 +5,7 @@
   border-color: var(--stsv-input__border-color);
   border-radius: 8px;
   border-style: solid;
-  border-width: 2px;
+  border-width: var(--stsv-input__border-width);
   color: var(--stsv-input__color);
   display: grid;
   grid-template-columns: 1fr auto;
@@ -33,7 +33,7 @@
   outline-color: var(--stsv-common__outline-color);
   outline-offset: 0;
   outline-style: solid;
-  outline-width: 2px;
+  outline-width: var(--stsv-common__outline-width);
 }
 
 .sterling-dropdown > .value {
@@ -89,9 +89,9 @@
   border-color: var(--stsv-common__border-color);
   border-radius: 0;
   border-style: solid;
-  border-width: 2px;
-  box-shadow: var(--stsv-common__box-shadow);
+  border-width: var(--stsv-common__border-width);
   color: var(--stsv-common__color);
+  filter: var(--stsv-common__drop-shadow);
   padding: 0.25em;
   display: grid;
   grid-template-columns: 1fr;

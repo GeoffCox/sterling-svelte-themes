@@ -1,0 +1,6 @@
+.sterling-menu-item:disabled {
+  cursor: not-allowed;
+  outline: none;
+  background-color: transparent;
+  color: var(--stsv-common__color--disabled);
+}

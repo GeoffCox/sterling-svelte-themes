@@ -46,7 +46,7 @@ and there is not a parent CSS selector.
   background-color: var(--stsv-input__background-color);
   border-color: var(--stsv-input__border-color);
   border-style: solid;
-  border-width: 2px;
+  border-width: var(--stsv-input__border-width);
   box-sizing: border-box;
   display: inline-block;
   height: 20px;
@@ -73,7 +73,7 @@ and there is not a parent CSS selector.
   outline-color: var(--stsv-common__outline-color);
   outline-offset: 0;
   outline-style: solid;
-  outline-width: 2px;
+  outline-width: var(--stsv-common__outline-width);
 }
 
 /*

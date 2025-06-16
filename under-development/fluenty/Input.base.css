@@ -35,7 +35,7 @@
 }
 
 .sterling-input:focus-within {
-  outline: 2px solid transparent;
+  outline: 1px solid transparent;
 }
 
 .sterling-input input:focus-within {

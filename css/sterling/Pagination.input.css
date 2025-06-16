@@ -5,7 +5,7 @@
   border-bottom-color: var(--stsv-input__border-color);
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: var(--stsv-input__border-width);
   box-sizing: border-box;
   color: var(--stsv-input__color);
   display: block;
@@ -23,7 +23,7 @@
   min-width: calc(var(--page-number-width, 1ch) + 1em);
 }
 
-.sterling-pagination input:not(:disabled) {
+.sterling-pagination input:not(:disabled):hover {
   background-color: var(--stsv-input__background-color--hover);
   border-bottom-color: var(--stsv-input__border-color--hover);
   color: var(--stsv-input__color--hover);
@@ -40,7 +40,7 @@
   outline-color: var(--stsv-common__outline-color);
   outline-offset: 0;
   outline-style: solid;
-  outline-width: 2px;
+  outline-width: var(--stsv-common__outline-width);
   outline: none;
 }
 @media (prefers-reduced-motion) {

@@ -54,11 +54,11 @@
 /* ----- toggle ----- */
 
 .sterling-switch .toggle {
-  background-color: var(--stsv-input__background-color);
+  background-color: var(--stsv-common__background-color);
   border-color: var(--stsv-input__border-color);
   border-radius: 10000px;
   border-style: solid;
-  border-width: 2px;
+  border-width: var(--stsv-input__border-width);
   box-sizing: border-box;
   color: var(--stsv-input__color);
   font: inherit;
@@ -71,26 +71,20 @@
   user-select: none;
 }
 
-.sterling-switch:not(.disabled):hover .toggle {
-  background-color: var(--stsv-input__background-color--hover);
+.sterling-switch:hover .toggle {
   border-color: var(--stsv-input__border-color--hover);
   color: var(--stsv-input__color--hover);
 }
 
-.sterling-switch:not(.disabled) input:focus-visible ~ .toggle {
-  background-color: var(--stsv-input__background-color--focus);
+.sterling-switch input:focus-visible ~ .toggle {
   border-color: var(--stsv-input__border-color--focus);
   color: var(--stsv-common__color--focux);
-  outline-color: var(--stsv-common__outline-color);
-  outline-offset: 0;
-  outline-style: solid;
-  outline-width: 2px;
 }
 
-.sterling-switch:not(.disabled) input:checked ~ .toggle,
-.sterling-switch:not(.disabled) input:checked:hover ~ .toggle,
-.sterling-switch:not(.disabled) input:checked:focus-visible ~ .toggle {
-  background-color: var(--stsv-input__border-color--hover);
+.sterling-switch input:checked ~ .toggle,
+.sterling-switch input:checked:hover ~ .toggle,
+.sterling-switch input:checked:focus-visible ~ .toggle {
+  background-color: var(--stsv-input__background-color--selected);
 }
 
 /* ----- switch vertical ----- */
@@ -107,11 +101,14 @@
 
 /* ----- labels ----- */
 
-.sterling-switch .off-label,
-.sterling-switch .on-label {
-  color: currentColor;
+.sterling-switch label {
+  color: var(--stsv-common__color);
   transition: color 250ms;
   font: inherit;
+}
+
+.sterling-switch .off-label,
+.sterling-switch .on-label {
   padding-top: 2px;
 }
 
@@ -122,7 +119,7 @@
   border-color: var(--stsv-button__border-color);
   border-radius: 10000px;
   border-style: solid;
-  border-width: 2px;
+  border-width: var(--stsv-button__border-width);
   box-sizing: border-box;
   color: var(--stsv-button__color);
   display: block;
@@ -137,16 +134,23 @@
   width: 1.25em;
 }
 
-.sterling-switch:not(.disabled):hover .thumb {
+.sterling-switch:hover .thumb {
   background-color: var(--stsv-button__background-color--hover);
   border-color: var(--stsv-button__border-color--hover);
   color: var(--stsv-button__color--hover);
 }
 
-.sterling-switch:not(.disabled):active .thumb {
+.sterling-switch:active .thumb {
   background-color: var(--stsv-button__background-color--active);
   border-color: var(--stsv-button__border-color--active);
   color: var(--stsv-button__color--hover);
+}
+
+.sterling-switch.using-keyboard:focus-within .thumb {
+  outline-color: var(--stsv-common__outline-color);
+  outline-offset: 0;
+  outline-style: solid;
+  outline-width: var(--stsv-common__outline-width);
 }
 
 /* ----- thumb vertical ----- */

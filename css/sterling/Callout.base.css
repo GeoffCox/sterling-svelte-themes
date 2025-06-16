@@ -8,11 +8,11 @@
   border-color: var(--stsv-common__border-color);
   border-radius: 0;
   border-style: solid;
-  border-width: 2px;
-  box-shadow: var(--stsv-common__box-shadow);
+  border-width: var(--stsv-common__border-width);
   box-sizing: border-box;
   color: var(--stsv-common__color);
   display: none;
+  filter: var(--stsv-common__drop-shadow);
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   height: auto;
@@ -45,13 +45,13 @@
 .sterling-callout.top-start .arrow,
 .sterling-callout.top .arrow,
 .sterling-callout.top-end .arrow {
-  filter: drop-shadow(-1px -2px 1px rgba(0, 0, 0, 0.2));
+  filter: var(--stsv-common__drop-shadow);
 }
 
 .sterling-callout.left-start .arrow,
 .sterling-callout.left .arrow,
 .sterling-callout.left-end .arrow {
-  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+  filter: var(--stsv-common__drop-shadow);
 }
 
 .sterling-callout .callout-text {
