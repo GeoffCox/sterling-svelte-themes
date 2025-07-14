@@ -22,6 +22,14 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 ## Change Log
 
+### 2.0.6
+
+- Fixed a few of invalid CSS declarations for background and border colors
+
+### 2.0.5
+
+- Fixed issue with new button disabled state not applying due to specificity of colors and variants
+
 ### 2.0.4
 
 - Standardized disabled styles: Removed no-step diagonal stripes in favor of traditional background, border, and color.

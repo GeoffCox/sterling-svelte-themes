@@ -1,6 +1,18 @@
-.sterling-button:disabled {
+.sterling-button:disabled,
+.sterling-button:disabled:hover,
+.sterling-button:disabled:active,
+.sterling-button:disabled:focus-visible {
   cursor: not-allowed;
   background-color: var(--stsv-button__background-color--disabled);
   border-color: var(--stsv-button__border-color--disabled);
   color: var(--stsv-button__color--disabled);
+}
+
+.sterling-button.secondary:disabled {
+  background-color: transparent;
+}
+
+.sterling-button.tool:disabled {
+  background-color: transparent;
+  border-color: transparent;
 }

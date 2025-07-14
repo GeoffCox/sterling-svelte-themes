@@ -1,23 +1,23 @@
 /* ----- blue ----- */
-.sterling-button.blue {
+.sterling-button.blue:not(:disabled) {
   background-color: var(--stsv-button__background-color--blue);
   border-color: var(--stsv-button__border-color--blue);
   color: var(--stsv-button__color--blue);
 }
 
-.sterling-button.blue:hover {
+.sterling-button.blue:not(:disabled):hover {
   background-color: var(--stsv-button__background-color--blue--hover);
   border-color: var(--stsv-button__border-color--blue--hover);
   color: var(--stsv-button__color--blue--hover);
 }
 
-.sterling-button.blue:focus {
+.sterling-button.blue:not(:disabled):focus-visible {
   background-color: var(--stsv-button__background-color--blue--focus);
   border-color: var(--stsv-button__border-color--blue--focus);
   color: var(--stsv-button__color--blue--focus);
 }
 
-.sterling-button.blue:active {
+.sterling-button.blue:not(:disabled):active {
   background-color: var(--stsv-button__background-color--blue--active);
   border-color: var(--stsv-button__border-color--blue--active);
   color: var(--stsv-button__color--blue--active);
@@ -25,75 +25,75 @@
 
 /* ----- green ----- */
 
-.sterling-button.green {
+.sterling-button.green:not(:disabled) {
   background-color: var(--stsv-button__background-color--green);
   border-color: var(--stsv-button__border-color--green);
   color: var(--stsv-button__color--green);
 }
 
-.sterling-button.green:hover {
+.sterling-button.green:not(:disabled):hover {
   background-color: var(--stsv-button__background-color--green--hover);
   border-color: var(--stsv-button__border-color--green--hover);
   color: var(--stsv-button__color--green--hover);
 }
 
-.sterling-button.green:focus {
+.sterling-button.green:not(:disabled):focus-visible {
   background-color: var(--stsv-button__background-color--green--focus);
   border-color: var(--stsv-button__border-color--green--focus);
   color: var(--stsv-button__color--green--focus);
 }
 
-.sterling-button.green:active {
+.sterling-button.green:not(:disabled):active {
   background-color: var(--stsv-button__background-color--green--active);
   border-color: var(--stsv-button__border-color--green--active);
   color: var(--stsv-button__color--green--active);
 }
 
 /* ----- orange ----- */
-.sterling-button.orange {
+.sterling-button.orange:not(:disabled) {
   background-color: var(--stsv-button__background-color--orange);
   border-color: var(--stsv-button__border-color--orange);
   color: var(--stsv-button__color--orange);
 }
 
-.sterling-button.orange:hover {
+.sterling-button.orange:not(:disabled):hover {
   background-color: var(--stsv-button__background-color--orange--hover);
   border-color: var(--stsv-button__border-color--orange--hover);
   color: var(--stsv-button__color--orange--hover);
 }
 
-.sterling-button.orange:focus {
+.sterling-button.orange:not(:disabled):focus-visible {
   background-color: var(--stsv-button__background-color--orange--focus);
   border-color: var(--stsv-button__border-color--orange--focus);
   color: var(--stsv-button__color--orange--focus);
 }
 
-.sterling-button.orange:active {
+.sterling-button.orange:not(:disabled):active {
   background-color: var(--stsv-button__background-color--orange--active);
   border-color: var(--stsv-button__border-color--orange--active);
   color: var(--stsv-button__color--orange--active);
 }
 
 /* ----- red ----- */
-.sterling-button.red {
+.sterling-button.red:not(:disabled) {
   background-color: var(--stsv-button__background-color--red);
   border-color: var(--stsv-button__border-color--red);
   color: var(--stsv-button__color--red);
 }
 
-.sterling-button.red:hover {
+.sterling-button.red:not(:disabled):hover {
   background-color: var(--stsv-button__background-color--red--hover);
   border-color: var(--stsv-button__border-color--red--hover);
   color: var(--stsv-button__color--red--hover);
 }
 
-.sterling-button.red:focus {
+.sterling-button.red:not(:disabled):focus-visible {
   background-color: var(--stsv-button__background-color--red--focus);
   border-color: var(--stsv-button__border-color--red--focus);
   color: var(--stsv-button__color--red--focus);
 }
 
-.sterling-button.red:active {
+.sterling-button.red:not(:disabled):active {
   background-color: var(--stsv-button__background-color--red--active);
   border-color: var(--stsv-button__border-color--red--active);
   color: var(--stsv-button__color--red--active);
