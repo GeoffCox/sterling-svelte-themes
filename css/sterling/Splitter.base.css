@@ -1,0 +1,124 @@
+/* ----- Splitter ----- */
+.sterling-splitter {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  outline: none;
+  overflow: hidden;
+  display: grid;
+}
+
+.sterling-splitter.horizontal {
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(var(--min-primary-size, 0), var(--primary-size)) auto minmax(var(--min-secondary-size, 0), 1fr);
+  grid-template-areas: "primary" "split" "secondary";
+}
+
+.sterling-splitter.vertical {
+  grid-template-columns: minmax(var(--min-primary-size, 0), var(--primary-size)) auto minmax(var(--min-secondary-size, 0), 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "primary split secondary";
+}
+
+/* ----- Panes ----- */
+
+.sterling-splitter > .primary,
+.sterling-splitter > .split,
+.sterling-splitter > .secondary {
+  box-sizing: border-box;
+  outline: none;
+  overflow: hidden;
+}
+
+/* ----- Primary ----- */
+
+.sterling-splitter > .primary {
+  grid-area: primary;
+}
+
+.sterling-splitter.horizontal > .primary {
+  width: 100%;
+}
+
+.sterling-splitter.vertical > .primary {
+  height: 100%;
+}
+
+/* ----- Split ----- */
+
+.sterling-splitter > .split {
+  display: flex;
+  grid-area: split;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  overflow: hidden;
+  user-select: none;
+  transition: background-color 300ms;
+}
+
+.sterling-splitter.horizontal > .split {
+  cursor: row-resize;
+  width: 100%;
+}
+
+.sterling-splitter.vertical > .split {
+  flex-direction: column;
+  cursor: col-resize;
+  height: 100%;
+}
+
+/* ----- Secondary ----- */
+
+.sterling-splitter > .secondary {
+  grid-area: secondary;
+}
+
+.sterling-splitter.horizontal > .secondary {
+  width: 100%;
+}
+
+.sterling-splitter.vertical > .secondary {
+  height: 100%;
+}
+
+/* ----- Default Split ----- */
+
+.sterling-splitter > .split > .default-split-line {
+  box-sizing: border-box;
+  outline: none;
+  user-select: none;
+  border: none;
+  background-color: var(--stsv-button__border-color);
+
+  transition: background-color 300ms;
+}
+
+.sterling-splitter.horizontal > .split > .default-split-line {
+  width: 100%;
+  height: 1px;
+  margin: 2px 0;
+  align-self: center;
+}
+
+.sterling-splitter.vertical > .split > .default-split-line {
+  width: 1px;
+  height: 100%;
+  margin: 0 2px;
+  align-self: center;
+}
+
+.sterling-splitter > .split:hover > .default-split-line {
+  background-color: var(--stsv-button__border-color--hover);
+}
+
+.sterling-splitter.horizontal > .split:hover > .default-split-line {
+  height: 3px;
+  margin: 1px 0;
+}
+
+.sterling-splitter.vertical > .split:hover > .default-split-line {
+  width: 3px;
+  margin: 0 1px;
+}

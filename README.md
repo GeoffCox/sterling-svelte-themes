@@ -22,6 +22,10 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 ## Change Log
 
+### 2.0.7
+
+- Add styles for new Splitter component
+
 ### 2.0.6
 
 - Fixed a few of invalid CSS declarations for background and border colors
