@@ -115,6 +115,25 @@ The checkmark is a rotated L centered in the box.
   font: inherit;
 }
 
+.sterling-checkbox.disabled,
+.sterling-checkbox.disabled input,
+.sterling-checkbox.disabled > label {
+  cursor: not-allowed;
+}
+
+.sterling-checkbox.disabled .indicator {
+  background-color: var(--stsv-input__background-color--disabled);
+  border-color: var(--stsv-input__border-color--disabled);
+}
+
+.sterling-checkbox.disabled .indicator::after {
+  border-color: var(--stsv-input__color--disabled);
+}
+
+.sterling-checkbox.disabled > label {
+  color: var(--stsv-common__color--disabled);
+}
+
 @media (prefers-reduced-motion) {
   .sterling-checkbox .indicator,
   .sterling-checkbox .indicator::after,

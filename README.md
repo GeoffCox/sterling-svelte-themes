@@ -22,9 +22,15 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 ## Change Log
 
+### 2.0.8
+
+- Added styles for checkbox button variant
+- Added styles for radio button variant
+- Cleaned up disabled styles for checkbox and radio
+
 ### 2.0.7
 
-- Add styles for new Splitter component
+- Added styles for new Splitter component
 
 ### 2.0.6
 

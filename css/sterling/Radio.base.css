@@ -100,6 +100,25 @@
   font: inherit;
 }
 
+.sterling-radio.disabled,
+.sterling-radio.disabled input,
+.sterling-radio.disabled > label {
+  cursor: not-allowed;
+}
+
+.sterling-radio.disabled .indicator {
+  background-color: var(--stsv-input__background-color--disabled);
+  border-color: var(--stsv-input__border-color--disabled);
+}
+
+.sterling-radio.disabled .indicator::after {
+  border-color: var(--stsv-input__color--disabled);
+}
+
+.sterling-radio.disabled > label {
+  color: var(--stsv-common__color--disabled);
+}
+
 @media (prefers-reduced-motion) {
   .sterling-radio .indicator,
   .sterling-radio .indicator::after,
