@@ -4,6 +4,7 @@
   grid-template-rows: 1fr;
   justify-content: center;
   justify-items: center;
+  border: 1px solid transparent;
 }
 
 .sterling-radio.button:not(.disabled):hover {
@@ -12,16 +13,13 @@
 
 .sterling-radio.button:not(.disabled):not(.checked):active {
 		background-color: var(--stsv-button__background-color--active);
-		border-color: transparent;
 	}
 
-	.sterling-radio.button.checked {
+	.sterling-radio.button:not(.disabled).checked {
 		background-color: var(--stsv-input__background-color--selected);
-		border-color: transparent;
 	}
 
 	.sterling-radio.button.using-keyboard:focus-within {
-		border-color: var(--stsv-button__border-color--focus);
 		outline-color: var(--stsv-common__outline-color);
 		outline-offset: 0;
 		outline-style: solid;
@@ -35,21 +33,23 @@
 }
 
 .sterling-radio.button .container {
+  display: block;
   justify-self: stretch;
   align-self: stretch;
   margin-right: unset;
 }
 
-.sterling-radio.button input {
-  appearance: initial;
+.sterling-radio.button label {
   display: block;
-  box-sizing: border-box;
-  opacity: 0;
-  width:100%;
-  height: 100%;
-  position: relative;
-  justify-self: stretch;
-  align-self: stretch;
+}
+
+.sterling-radio.button input {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: unset;
+  height: unset;
 }
 
 .sterling-radio.button .indicator {
@@ -59,9 +59,8 @@
 
 .sterling-radio.button.disabled {
   background-color: var(--stsv-input__background-color--disabled);
-  border-color: transparent;
 }
 
-.sterling-radio.button.disabled > label {
+.sterling-radio.button.disabled label {
   color: var(--stsv-common__color--disabled);
 }

@@ -109,7 +109,7 @@ The checkmark is a rotated L centered in the box.
   border-color: var(--stsv-input__color--hover);
 }
 
-.sterling-checkbox > label {
+.sterling-checkbox label {
   color: var(--stsv-common__color);
   transition: color 250ms;
   font: inherit;
@@ -117,7 +117,7 @@ The checkmark is a rotated L centered in the box.
 
 .sterling-checkbox.disabled,
 .sterling-checkbox.disabled input,
-.sterling-checkbox.disabled > label {
+.sterling-checkbox.disabled label {
   cursor: not-allowed;
 }
 
@@ -130,7 +130,7 @@ The checkmark is a rotated L centered in the box.
   border-color: var(--stsv-input__color--disabled);
 }
 
-.sterling-checkbox.disabled > label {
+.sterling-checkbox.disabled label {
   color: var(--stsv-common__color--disabled);
 }
 
@@ -138,7 +138,7 @@ The checkmark is a rotated L centered in the box.
   .sterling-checkbox .indicator,
   .sterling-checkbox .indicator::after,
   .sterling-checkbox .container::after,
-  .sterling-checkbox > label {
+  .sterling-checkbox label {
     transition: none;
   }
 }

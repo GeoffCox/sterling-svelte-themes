@@ -102,7 +102,7 @@
 
 .sterling-radio.disabled,
 .sterling-radio.disabled input,
-.sterling-radio.disabled > label {
+.sterling-radio.disabled label {
   cursor: not-allowed;
 }
 
@@ -115,7 +115,7 @@
   border-color: var(--stsv-input__color--disabled);
 }
 
-.sterling-radio.disabled > label {
+.sterling-radio.disabled label {
   color: var(--stsv-common__color--disabled);
 }
 

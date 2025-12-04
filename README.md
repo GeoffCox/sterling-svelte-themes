@@ -22,6 +22,19 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 ## Change Log
 
+### 2.0.11
+
+- Fix put 1px transparent border on checkbox and radio button variants to match 
+Button layout and size.
+
+### 2.0.10
+
+- Fix to sizing of checkbox and radio button variant inputs
+
+### 2.0.9
+
+- Fix in radio button hover style
+
 ### 2.0.8
 
 - Added styles for checkbox button variant
