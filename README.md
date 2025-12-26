@@ -22,6 +22,10 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 ## Change Log
 
+### 2.0.12
+
+- Fix to hide slider thumb when value is undefined
+
 ### 2.0.11
 
 - Fix put 1px transparent border on checkbox and radio button variants to match 

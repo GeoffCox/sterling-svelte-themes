@@ -172,6 +172,10 @@
   outline-width: var(--stsv-common__outline-width);
 }
 
+.sterling-slider.no-value .thumb {
+  display: none;
+}
+
 /* ----- reduced motion ----- */
 
 @media (prefers-reduced-motion) {
