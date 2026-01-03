@@ -22,6 +22,10 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 ## Change Log
 
+### 2.0.13/2.0.14
+
+- Removed spurious min-width on slider
+
 ### 2.0.12
 
 - Fix to hide slider thumb when value is undefined
