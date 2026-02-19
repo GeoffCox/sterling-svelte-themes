@@ -1,21 +1,45 @@
 .sterling-checkbox.button {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  align-content: center;
+  align-items: center;
+  appearance: none;
+  background-color: transparent;
+  border-color: transparent;
+  border-style: solid;
+  border-width: var(--stsv-button__border-width);
+  box-sizing: border-box;
+  color: var(--stsv-button__color);
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  font: inherit;
   justify-content: center;
   justify-items: center;
-  border: 1px solid transparent;
+  column-gap: 0.25em;
+  overflow: hidden;
+  padding: 0.5em 1em;
+  /* position:relative contains the input since container is removed from layout */
+  position: relative;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition:
+    background-color 250ms,
+    color 250ms,
+    border-color 250ms;
+  white-space: nowrap;
+  user-select: none;
 }
 
 .sterling-checkbox.button:not(.disabled):hover {
   background-color: var(--stsv-button__background-color--hover);
+  border-color: transparent;
 }
 
-.sterling-checkbox.button:not(.disabled):not(.checked):active {
+.sterling-checkbox.button:not(.checked):not(.disabled):active {
   background-color: var(--stsv-button__background-color--active);
+  border-color: transparent;
 }
 
-.sterling-checkbox.button:not(.disabled).checked {
+.sterling-checkbox.button.checked:not(.disabled) {
   background-color: var(--stsv-input__background-color--selected);
 }
 
@@ -26,17 +50,9 @@
   outline-width: 2px;
 }
 
-.sterling-checkbox.button .container,
-.sterling-radio.button label {
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
-}
-
+/* Remove the container from layout */
 .sterling-checkbox.button .container {
-  display: block;
-  justify-self: stretch;
-  align-self: stretch;
-  margin-right: unset;
+  display: contents;
 }
 
 .sterling-checkbox.button input {
@@ -56,8 +72,21 @@
   display: none;
 }
 
-.sterling-checkbox.button.disabled {
-  background-color: var(--stsv-input__background-color--disabled);
+.sterling-checkbox.button.disabled,
+.sterling-checkbox.button.disabled:hover,
+.sterling-checkbox.button.disabled:active,
+.sterling-checkbox.button.disabled:focus-visible {
+  cursor: not-allowed;
+  background-color: var(--stsv-button__background-color--disabled);
+  border-color: var(--stsv-button__border-color--disabled);
+  color: var(--stsv-button__color--disabled);
+}
+
+.sterling-checkbox.button.checked.disabled,
+.sterling-checkbox.button.checked.disabled:hover,
+.sterling-checkbox.button.checked.disabled:active,
+.sterling-checkbox.button.checked.disabled:focus-visible {
+  background-color: var(--stsv-input__background-color--selected);
 }
 
 .sterling-checkbox.button.disabled label {

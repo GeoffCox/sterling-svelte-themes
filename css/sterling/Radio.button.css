@@ -5,6 +5,8 @@
   justify-content: center;
   justify-items: center;
   border: 1px solid transparent;
+  /* position:relative contains the input since container is removed from layout */
+  position: relative;
 }
 
 .sterling-radio.button:not(.disabled):hover {
@@ -12,35 +14,23 @@
 }
 
 .sterling-radio.button:not(.disabled):not(.checked):active {
-		background-color: var(--stsv-button__background-color--active);
-	}
-
-	.sterling-radio.button:not(.disabled).checked {
-		background-color: var(--stsv-input__background-color--selected);
-	}
-
-	.sterling-radio.button.using-keyboard:focus-within {
-		outline-color: var(--stsv-common__outline-color);
-		outline-offset: 0;
-		outline-style: solid;
-		outline-width: 2px;
-	}
-
-.sterling-radio.button .container,
-.sterling-radio.button label {
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
+  background-color: var(--stsv-button__background-color--active);
 }
 
+.sterling-radio.button:not(.disabled).checked {
+  background-color: var(--stsv-input__background-color--selected);
+}
+
+.sterling-radio.button.using-keyboard:focus-within {
+  outline-color: var(--stsv-common__outline-color);
+  outline-offset: 0;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+/* Remove the container from layout */
 .sterling-radio.button .container {
-  display: block;
-  justify-self: stretch;
-  align-self: stretch;
-  margin-right: unset;
-}
-
-.sterling-radio.button label {
-  display: block;
+  display: contents;
 }
 
 .sterling-radio.button input {
@@ -52,10 +42,13 @@
   height: unset;
 }
 
+.sterling-radio.button label {
+  display: block;
+}
+
 .sterling-radio.button .indicator {
   display: none;
 }
-
 
 .sterling-radio.button.disabled {
   background-color: var(--stsv-input__background-color--disabled);

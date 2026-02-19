@@ -22,6 +22,11 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 ## Change Log
 
+### 2.0.15
+
+- Fixed issue with checkbox and radio button styles to ensure hidden input 
+fills button area and can be clicked.
+
 ### 2.0.13/2.0.14
 
 - Removed spurious min-width on slider
