@@ -22,6 +22,11 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 ## Change Log
 
+### 2.0.16
+
+- Added style support for Dialog not having a form element that wraps content.
+- CSS style fix: content: '' => content: ""
+
 ### 2.0.15
 
 - Fixed issue with checkbox and radio button styles to ensure hidden input 

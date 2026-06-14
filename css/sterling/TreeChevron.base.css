@@ -9,7 +9,7 @@
 
 .sterling-tree-chevron::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   left: 50%;
   width: 7px;
@@ -62,7 +62,7 @@
 
 .sterling-tree-chevron.leaf::after {
   animation: none;
-  content: '';
+  content: "";
   position: absolute;
   font: inherit;
   left: 50%;

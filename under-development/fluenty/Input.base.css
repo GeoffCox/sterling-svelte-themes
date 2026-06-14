@@ -44,7 +44,7 @@
 
 .sterling-input::after {
   box-sizing: border-box;
-  content: '';
+  content: "";
   position: absolute;
   left: -1px;
   bottom: -1px;

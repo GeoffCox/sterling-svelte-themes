@@ -80,7 +80,7 @@
 .sterling-radio .indicator::after {
   background-color: transparent;
   border-radius: 10000px;
-  content: '';
+  content: "";
   height: 9px;
   left: 50%;
   position: absolute;
