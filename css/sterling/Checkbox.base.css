@@ -1,6 +1,7 @@
 .sterling-checkbox {
   align-content: center;
   align-items: center;
+  column-gap: 0.25em;
   box-sizing: border-box;
   display: inline-flex;
   font: inherit;
@@ -16,11 +17,17 @@ The container
 - prevents collisions with surrounding slots
 */
 .sterling-checkbox .container {
+  box-sizing: border-box;
   font: inherit;
-  position: relative;
   display: grid;
-  align-items: center;
-  margin-right: 0.25em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-content: stretch;
+  place-items: stretch;
+}
+
+.sterling-checkbox .container > * {
+  grid-area: 1 / 1;
 }
 
 /*
@@ -31,10 +38,7 @@ The input is hidden since the built-in browser checkbox cannot be customized
   font: inherit;
   margin: 0;
   padding: 0;
-  position: absolute;
   opacity: 0;
-  height: 20px;
-  width: 20px;
 }
 
 /*
@@ -51,12 +55,12 @@ and there is not a parent CSS selector.
   display: inline-block;
   height: 20px;
   position: relative;
+  pointer-events: none;
   transition:
     background-color 250ms,
     color 250ms,
     border-color 250ms;
   width: 20px;
-  pointer-events: none;
 }
 
 .sterling-checkbox:not(.disabled) input:checked + .indicator {

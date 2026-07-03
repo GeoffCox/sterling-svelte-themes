@@ -1,6 +1,7 @@
 .sterling-radio {
   align-content: center;
   align-items: center;
+  column-gap: 0.25em;
   box-sizing: border-box;
   display: inline-flex;
   font: inherit;
@@ -16,11 +17,16 @@
 	 */
 .sterling-radio .container {
   box-sizing: border-box;
-  position: relative;
   font: inherit;
-  display: flex;
-  align-items: center;
-  margin-right: 0.25em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-content: stretch;
+  place-items: stretch;
+}
+
+.sterling-radio .container > * {
+  grid-area: 1 / 1;
 }
 
 /*
@@ -31,10 +37,7 @@
   font: inherit;
   margin: 0;
   padding: 0;
-  position: absolute;
   opacity: 0;
-  height: 21px;
-  width: 21px;
 }
 
 /*

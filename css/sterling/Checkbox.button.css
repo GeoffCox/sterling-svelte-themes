@@ -1,20 +1,13 @@
 .sterling-checkbox.button {
-  align-content: center;
-  align-items: center;
-  appearance: none;
-  background-color: transparent;
-  border-color: transparent;
-  border-style: solid;
-  border-width: var(--stsv-button__border-width);
-  box-sizing: border-box;
+  background-color: var(--stsv-button__background-color);
+  column-gap: unset;
   color: var(--stsv-button__color);
   cursor: pointer;
-  display: inline-flex;
-  flex-direction: row;
-  font: inherit;
-  justify-content: center;
-  justify-items: center;
-  column-gap: 0.25em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-content: stretch;
+  place-items: stretch;
   overflow: hidden;
   padding: 0.5em 1em;
   /* position:relative contains the input since container is removed from layout */
@@ -29,14 +22,16 @@
   user-select: none;
 }
 
+.sterling-checkbox.button > * {
+  grid-area: 1 / 1;
+}
+
 .sterling-checkbox.button:not(.disabled):hover {
   background-color: var(--stsv-button__background-color--hover);
-  border-color: transparent;
 }
 
 .sterling-checkbox.button:not(.checked):not(.disabled):active {
   background-color: var(--stsv-button__background-color--active);
-  border-color: transparent;
 }
 
 .sterling-checkbox.button.checked:not(.disabled) {
@@ -50,22 +45,9 @@
   outline-width: 2px;
 }
 
-/* Remove the container from layout */
-.sterling-checkbox.button .container {
-  display: contents;
-}
-
-.sterling-checkbox.button input {
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: unset;
-  height: unset;
-}
-
 .sterling-radio.button label {
   display: block;
+  position: relative; /* important to the label being on top */
 }
 
 .sterling-checkbox.button .indicator {
@@ -78,7 +60,6 @@
 .sterling-checkbox.button.disabled:focus-visible {
   cursor: not-allowed;
   background-color: var(--stsv-button__background-color--disabled);
-  border-color: var(--stsv-button__border-color--disabled);
   color: var(--stsv-button__color--disabled);
 }
 

@@ -22,6 +22,10 @@ https://github.com/GeoffCox/sterling-svelte-themes
 
 ## Change Log
 
+### 2.0.17 & 2.0.18
+
+- Fixed Checkbox and Radio button layout styling to avoid absolute positioning from obscuring mouse events.
+
 ### 2.0.16
 
 - Added style support for Dialog not having a form element that wraps content.
