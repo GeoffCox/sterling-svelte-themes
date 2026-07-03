@@ -1,0 +1,61 @@
+.sterling-popover-2 {
+  margin: 0;
+  inset: auto;
+  transform: translate(var(--offset-x), var(--offset-y));
+}
+
+/* 
+Setting position-anchor breaks invoker implicit anchoring 
+CSS BUG - breaks anchoring with position-anchor: unset
+*/
+.sterling-popover-2.with-anchor {
+  position-anchor: var(--anchor-ident);
+}
+
+.sterling-popover-2[data-anchor-origin^="top"] {
+  bottom: anchor(top);
+}
+
+.sterling-popover-2.anchor-v-top {
+  bottom: anchor(top);
+}
+
+.sterling-popover-2[data-anchor-origin^="center"] {
+  align-self: anchor-center;
+}
+
+.sterling-popover-2.anchor-v-center {
+  align-self: anchor-center;
+}
+
+.sterling-popover-2[data-anchor-origin^="bottom"] {
+  top: anchor(bottom);
+}
+
+.sterling-popover-2.anchor-v-bottom {
+  top: anchor(bottom);
+}
+
+.sterling-popover-2[data-anchor-origin$="left"] {
+  right: anchor(left);
+}
+
+.sterling-popover-2.anchor-h-left {
+  right: anchor(left);
+}
+
+.sterling-popover-2[data-anchor-origin$="center"] {
+  justify-self: anchor-center;
+}
+
+.sterling-popover-2.anchor-h-center {
+  justify-self: anchor-center;
+}
+
+.sterling-popover-2[data-anchor-origin$="right"] {
+  left: anchor(right);
+}
+
+.sterling-popover-2.anchor-h-right {
+  left: anchor(right);
+}
