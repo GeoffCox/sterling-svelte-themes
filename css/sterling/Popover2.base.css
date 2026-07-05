@@ -1,6 +1,10 @@
 .sterling-popover-2 {
-  margin: 0;
+  border: none;
+  background-color: transparent;
   inset: auto;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
   transform: translate(var(--offset-x), var(--offset-y));
 }
 
@@ -16,15 +20,7 @@ CSS BUG - breaks anchoring with position-anchor: unset
   bottom: anchor(top);
 }
 
-.sterling-popover-2.anchor-v-top {
-  bottom: anchor(top);
-}
-
 .sterling-popover-2[data-anchor-origin^="center"] {
-  align-self: anchor-center;
-}
-
-.sterling-popover-2.anchor-v-center {
   align-self: anchor-center;
 }
 
@@ -32,15 +28,7 @@ CSS BUG - breaks anchoring with position-anchor: unset
   top: anchor(bottom);
 }
 
-.sterling-popover-2.anchor-v-bottom {
-  top: anchor(bottom);
-}
-
 .sterling-popover-2[data-anchor-origin$="left"] {
-  right: anchor(left);
-}
-
-.sterling-popover-2.anchor-h-left {
   right: anchor(left);
 }
 
@@ -48,14 +36,19 @@ CSS BUG - breaks anchoring with position-anchor: unset
   justify-self: anchor-center;
 }
 
-.sterling-popover-2.anchor-h-center {
-  justify-self: anchor-center;
-}
-
 .sterling-popover-2[data-anchor-origin$="right"] {
   left: anchor(right);
 }
 
-.sterling-popover-2.anchor-h-right {
-  left: anchor(right);
+.sterling-popover-2 {
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.sterling-popover-2 > .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: stretch;
+  place-content: stretch;
 }

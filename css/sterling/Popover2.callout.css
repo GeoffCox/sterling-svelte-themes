@@ -1,0 +1,161 @@
+
+.sterling-popover-2.callout > .content {
+  position: relative;
+  background-color: var(--stsv-common__background-color);
+  border-color: var(--stsv-common__border-color);
+  border-radius: 2px;
+  border-style: solid;
+  border-width: var(--stsv-common__border-width);
+  box-sizing: border-box;
+  filter: var(--stsv-common__drop-shadow);
+  /* ensure there is enough room for the arrow */
+  min-width: 2em;
+  min-height: 1em;
+}
+
+/* ::before- bordered triangle, 
+   ::after  - fill triangle to block out part of content border
+*/
+.sterling-popover-2.callout > .content::before,
+.sterling-popover-2.callout > .content::after {
+  background-color: var(--stsv-common__background-color);
+  border-color: var(--stsv-common__border-color);
+  border-style: solid;
+  border-width: var(--stsv-common__border-width);
+  box-sizing: border-box;
+  clip-path: polygon(-100% -100%, 200% -100%, 200% 200%, -100% -100%);
+  content: "";
+  height: 14px;
+  position: absolute;
+  width: 14px;
+}
+
+.sterling-popover-2.callout > .content::before {
+  filter: var(--stsv-common__drop-shadow);
+}
+
+.sterling-popover-2.callout > .content::after {
+  border-color: transparent;
+}
+
+/** arrow positioning: top-left,center,right => pointing down */
+.sterling-popover-2.callout[data-placement^="top"] > .content::before,
+.sterling-popover-2.callout[data-placement^="top"] > .content::after {
+  transform: rotate(135deg);
+  bottom: -7px;
+}
+
+.sterling-popover-2.callout[data-placement^="top"] > .content::after {
+  bottom: -5.5px;
+}
+
+.sterling-popover-2.callout[data-placement="top-left"] > .content::before,
+.sterling-popover-2.callout[data-placement="top-left"] > .content::after {
+  right: 10px;
+}
+
+.sterling-popover-2.callout[data-placement="top-center"] > .content::before,
+.sterling-popover-2.callout[data-placement="top-center"] > .content::after {
+  justify-self: center;
+}
+
+.sterling-popover-2.callout[data-placement="top-right"] > .content::before,
+.sterling-popover-2.callout[data-placement="top-right"] > .content::after {
+  left: 10px;
+}
+
+/** arrow positioning: center-left,center,right => pointing left/none/right */
+.sterling-popover-2.callout[data-placement^="center"] > .content::before,
+.sterling-popover-2.callout[data-placement^="center"] > .content::after {
+  align-self: center;
+}
+
+.sterling-popover-2.callout[data-placement="center-left"] > .content::before,
+.sterling-popover-2.callout[data-placement="center-left"] > .content::after {
+  transform: rotate(45deg);
+  right: -8px;
+}
+
+.sterling-popover-2.callout[data-placement="center-left"] > .content::after {
+  right: -6.5px;
+}
+.sterling-popover-2.callout[data-placement="center-center"] > .content::before,
+.sterling-popover-2.callout[data-placement="center-center"] > .content::after {
+  display: none;
+}
+
+.sterling-popover-2.callout[data-placement="center-right"] > .content::before,
+.sterling-popover-2.callout[data-placement="center-right"] > .content::after {
+  transform: rotate(-135deg);
+  filter: none;
+  left: -8px;
+}
+
+.sterling-popover-2.callout[data-placement="center-right"] > .content::after {
+  left: -6.5px;
+}
+
+/** arrow positioning: bottom-left,center,right => pointing up */
+.sterling-popover-2.callout[data-placement^="bottom"] > .content::before,
+.sterling-popover-2.callout[data-placement^="bottom"] > .content::after {
+  transform: rotate(-45deg);
+  top: -7px;
+  filter: none;
+}
+
+.sterling-popover-2.callout[data-placement^="bottom"] > .content::after {
+  top: -5.5px;
+}
+
+.sterling-popover-2.callout[data-placement="bottom-left"] > .content::before,
+.sterling-popover-2.callout[data-placement="bottom-left"] > .content::after {
+  right: 10px;
+}
+
+.sterling-popover-2.callout[data-placement="bottom-center"] > .content::before,
+.sterling-popover-2.callout[data-placement="bottom-center"] > .content::after {
+  justify-self: center;
+}
+
+.sterling-popover-2.callout[data-placement="bottom-right"] > .content::before,
+.sterling-popover-2.callout[data-placement="bottom-right"] > .content::after {
+  left: 10px;
+}
+
+
+/* align tip of arrow with anchor origin */
+.sterling-popover-2.callout[data-placement^="top-left"] {
+  transform: translate(calc(var(--offset-x) + 18px), calc(var(--offset-y) - 9px));
+}
+
+.sterling-popover-2.callout[data-placement^="top-center"] {
+  transform: translate(var(--offset-x), calc(var(--offset-y) - 9px));
+}
+
+.sterling-popover-2.callout[data-placement^="top-right"] {
+  transform: translate(calc(var(--offset-x) - 19px), calc(var(--offset-y) - 9px));
+}
+
+.sterling-popover-2.callout[data-placement^="center-left"] {
+  transform: translate(calc(var(--offset-x) - 9px), var(--offset-y));
+}
+
+.sterling-popover-2.callout[data-placement^="center-center"] {
+  transform: translate(var(--offset-x), var(--offset-y));
+}
+
+.sterling-popover-2.callout[data-placement^="center-right"] {
+  transform: translate(calc(var(--offset-x) + 9px), var(--offset-y));
+}
+
+.sterling-popover-2.callout[data-placement^="bottom-left"] {
+  transform: translate(calc(var(--offset-x) + 18px), calc(var(--offset-y) + 9px));
+}
+
+.sterling-popover-2.callout[data-placement^="bottom-center"] {
+  transform: translate(var(--offset-x), calc(var(--offset-y) + 9px));
+}
+
+.sterling-popover-2.callout[data-placement^="bottom-right"] {
+  transform: translate(calc(var(--offset-x) - 19px), calc(var(--offset-y) + 9px));
+}
